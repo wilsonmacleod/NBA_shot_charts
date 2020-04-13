@@ -1,3 +1,7 @@
 ###
 
-Player ids and names
+Datastuctures
+    -shot data per player per season
+    -player id, name, team, age
+
+flask/django?

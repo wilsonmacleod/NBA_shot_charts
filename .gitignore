@@ -1,3 +1,5 @@
-get/data/*
-get/urls.py*
+__pycache__
+
+crawlers/data/*
+crawlers/urls.py*
 env/
