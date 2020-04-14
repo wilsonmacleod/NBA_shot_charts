@@ -1,0 +1,268 @@
+2020-04-13 14:26:43,445 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    return render(request, 'index.html')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'blog-home' not found. 'blog-home' is not a valid view function or pattern name.
+2020-04-13 14:26:43,445 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    return render(request, 'index.html')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'blog-home' not found. 'blog-home' is not a valid view function or pattern name.
+2020-04-13 14:26:43,452 django.server ERROR    "GET / HTTP/1.1" 500 125452
+2020-04-13 14:26:43,452 django.server ERROR    "GET / HTTP/1.1" 500 125452
+2020-04-13 14:28:15,508 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:28:15,508 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:28:15,709 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:28:15,709 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:28:15,710 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:28:15,710 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:29,960 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:29,960 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:30,136 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:30,136 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:30,137 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:30,137 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:37,243 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:37,243 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:56,994 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:56,994 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:57,091 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:57,091 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:57,091 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:57,091 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:30:51,578 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:30:51,578 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:31:28,357 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 6, in home
+    return render(request, 'index.html', msg="Hello World-DjangoHere")
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:31:28,357 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 6, in home
+    return render(request, 'index.html', msg="Hello World-DjangoHere")
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:31:28,361 django.server ERROR    "GET / HTTP/1.1" 500 74771
+2020-04-13 14:31:28,361 django.server ERROR    "GET / HTTP/1.1" 500 74771
+2020-04-13 14:31:29,155 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:31:29,155 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:31:29,156 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:31:29,156 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:27,224 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    return render(request, 'index.html', msg=msg)
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:33:27,224 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    return render(request, 'index.html', msg=msg)
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:33:27,226 django.server ERROR    "GET / HTTP/1.1" 500 75040
+2020-04-13 14:33:27,226 django.server ERROR    "GET / HTTP/1.1" 500 75040
+2020-04-13 14:33:27,993 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:27,993 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:27,993 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:27,993 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:41,869 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:33:41,869 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:33:42,018 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:42,018 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:42,019 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:42,019 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:34:45,588 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:34:45,588 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:34:45,773 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:34:45,773 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:34:45,774 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:34:45,774 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:38:23,556 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:38:23,556 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:38:23,560 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:38:23,560 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:44:14,004 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:44:14,004 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:44:14,005 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:44:14,005 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:31:06,655 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:31:06,655 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:25,640 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:25,640 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:52,845 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:52,845 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:52,992 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:58:52,992 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:58:52,992 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:58:52,992 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:46,155 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    name = obj.PLAYER_NAME
+AttributeError: 'Shot_data' object has no attribute 'PLAYER_NAME'
+2020-04-14 12:59:46,155 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    name = obj.PLAYER_NAME
+AttributeError: 'Shot_data' object has no attribute 'PLAYER_NAME'
+2020-04-14 12:59:46,158 django.server ERROR    "GET / HTTP/1.1" 500 76523
+2020-04-14 12:59:46,158 django.server ERROR    "GET / HTTP/1.1" 500 76523
+2020-04-14 12:59:46,587 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:46,587 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:46,588 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:46,588 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:56,862 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:59:56,862 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:59:57,023 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:57,023 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:57,024 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:57,024 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:19,380 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.values()
+AttributeError: 'Shot_data' object has no attribute 'values'
+2020-04-14 13:00:19,380 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.values()
+AttributeError: 'Shot_data' object has no attribute 'values'
+2020-04-14 13:00:19,381 django.server ERROR    "GET / HTTP/1.1" 500 76547
+2020-04-14 13:00:19,381 django.server ERROR    "GET / HTTP/1.1" 500 76547
+2020-04-14 13:00:19,694 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:19,694 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:19,695 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:19,695 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:26,793 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.data
+AttributeError: 'Shot_data' object has no attribute 'data'
+2020-04-14 13:00:26,793 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.data
+AttributeError: 'Shot_data' object has no attribute 'data'
+2020-04-14 13:00:26,795 django.server ERROR    "GET / HTTP/1.1" 500 76531
+2020-04-14 13:00:26,795 django.server ERROR    "GET / HTTP/1.1" 500 76531
+2020-04-14 13:00:27,065 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:27,065 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:27,066 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:27,066 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:01:42,769 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 13:01:42,769 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 13:01:42,921 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:01:42,921 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:01:42,922 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:01:42,922 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093

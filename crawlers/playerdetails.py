@@ -17,13 +17,14 @@ def get(season):
     shots = response['resultSets'][0]['rowSet']
     df = pd.DataFrame(shots, columns=column_headers)
     df.drop(df.columns[5:], axis=1, inplace=True)
+    df['SEASON'] = season
     return df
 
 def main(season):
     basepath = path.dirname(__file__)
     finalpath = basepath + '/data/player_details/'
     df = get(season)
-    data = [{'id': row['PLAYER_ID'], 'metadata': {j: row[j] for j in df.columns if j != "PLAYER_ID"}} for i, row in df.iterrows()]
+    data = [{'model': 'app.Player_id', 'fields': {j: row[j] for j in df.columns}} for i, row in df.iterrows()]
     with open(f'{finalpath}/{season}.json', 'w') as f:
         json.dump(data, f)
 

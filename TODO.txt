@@ -4,4 +4,10 @@ Datastuctures
     -shot data per player per season
     -player id, name, team, age
 
-flask/django?
+django
+    //-models
+    //-fixtures
+    -forms
+    -templates
+    -views
+    -css

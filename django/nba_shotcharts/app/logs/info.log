@@ -1,0 +1,758 @@
+2020-04-13 13:49:39,031 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 13:49:39,031 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 13:49:50,235 django.server INFO     "GET / HTTP/1.1" 200 16351
+2020-04-13 13:49:50,235 django.server INFO     "GET / HTTP/1.1" 200 16351
+2020-04-13 13:49:50,287 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-13 13:49:50,287 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-13 13:49:50,468 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-13 13:49:50,469 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-13 13:49:50,468 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-13 13:49:50,469 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-13 13:49:50,471 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-13 13:49:50,471 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-13 14:12:01,897 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\nba_shotcharts\urls.py changed, reloading.
+2020-04-13 14:12:01,897 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\nba_shotcharts\urls.py changed, reloading.
+2020-04-13 14:12:02,820 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:12:02,820 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:25:18,838 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:25:18,838 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:25:19,749 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:25:19,749 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:26:29,486 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:26:29,486 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:26:40,491 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\nba_shotcharts\urls.py changed, reloading.
+2020-04-13 14:26:40,491 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\nba_shotcharts\urls.py changed, reloading.
+2020-04-13 14:26:41,335 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:26:41,335 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:26:43,445 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    return render(request, 'index.html')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'blog-home' not found. 'blog-home' is not a valid view function or pattern name.
+2020-04-13 14:26:43,445 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    return render(request, 'index.html')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\urls\resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'blog-home' not found. 'blog-home' is not a valid view function or pattern name.
+2020-04-13 14:26:43,452 django.server ERROR    "GET / HTTP/1.1" 500 125452
+2020-04-13 14:26:43,452 django.server ERROR    "GET / HTTP/1.1" 500 125452
+2020-04-13 14:28:15,444 django.server INFO     "GET / HTTP/1.1" 200 3002
+2020-04-13 14:28:15,444 django.server INFO     "GET / HTTP/1.1" 200 3002
+2020-04-13 14:28:15,508 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:28:15,508 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:28:15,709 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:28:15,709 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:28:15,710 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:28:15,710 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:29,917 django.server INFO     "GET / HTTP/1.1" 200 680
+2020-04-13 14:29:29,917 django.server INFO     "GET / HTTP/1.1" 200 680
+2020-04-13 14:29:29,960 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:29,960 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:30,136 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:30,136 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:30,137 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:30,137 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:37,196 django.server INFO     "GET / HTTP/1.1" 200 680
+2020-04-13 14:29:37,196 django.server INFO     "GET / HTTP/1.1" 200 680
+2020-04-13 14:29:37,243 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:37,243 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:54,911 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:29:54,911 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:29:55,911 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:29:55,911 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:29:56,919 django.server INFO     "GET / HTTP/1.1" 200 684
+2020-04-13 14:29:56,919 django.server INFO     "GET / HTTP/1.1" 200 684
+2020-04-13 14:29:56,994 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:56,994 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:29:57,091 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:57,091 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:29:57,091 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:29:57,091 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:30:51,578 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:30:51,578 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:31:20,281 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:31:20,281 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:31:21,164 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:31:21,164 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:31:28,357 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 6, in home
+    return render(request, 'index.html', msg="Hello World-DjangoHere")
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:31:28,357 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 6, in home
+    return render(request, 'index.html', msg="Hello World-DjangoHere")
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:31:28,361 django.server ERROR    "GET / HTTP/1.1" 500 74771
+2020-04-13 14:31:28,361 django.server ERROR    "GET / HTTP/1.1" 500 74771
+2020-04-13 14:31:29,155 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:31:29,155 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:31:29,156 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:31:29,156 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:31:53,967 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:31:53,967 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:31:54,764 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:31:54,764 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:32:53,408 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:32:53,408 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:32:54,460 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:32:54,460 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:33:27,224 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    return render(request, 'index.html', msg=msg)
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:33:27,224 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    return render(request, 'index.html', msg=msg)
+TypeError: render() got an unexpected keyword argument 'msg'
+2020-04-13 14:33:27,226 django.server ERROR    "GET / HTTP/1.1" 500 75040
+2020-04-13 14:33:27,226 django.server ERROR    "GET / HTTP/1.1" 500 75040
+2020-04-13 14:33:27,993 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:27,993 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:27,993 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:27,993 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:39,973 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:33:39,973 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-13 14:33:40,984 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:33:40,984 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-13 14:33:41,830 django.server INFO     "GET / HTTP/1.1" 200 677
+2020-04-13 14:33:41,830 django.server INFO     "GET / HTTP/1.1" 200 677
+2020-04-13 14:33:41,869 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:33:41,869 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:33:42,018 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:42,018 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:33:42,019 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:33:42,019 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:34:45,553 django.server INFO     "GET / HTTP/1.1" 200 688
+2020-04-13 14:34:45,553 django.server INFO     "GET / HTTP/1.1" 200 688
+2020-04-13 14:34:45,588 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:34:45,588 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-13 14:34:45,773 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:34:45,773 django.request WARNING  Not Found: /favicon.ico
+2020-04-13 14:34:45,774 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-13 14:34:45,774 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:37:33,111 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:37:33,111 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:38:22,805 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:38:22,805 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:38:22,965 django.server INFO     "GET /admin HTTP/1.1" 301 0
+2020-04-14 09:38:22,965 django.server INFO     "GET /admin HTTP/1.1" 301 0
+2020-04-14 09:38:23,019 django.server INFO     "GET /admin/ HTTP/1.1" 302 0
+2020-04-14 09:38:23,019 django.server INFO     "GET /admin/ HTTP/1.1" 302 0
+2020-04-14 09:38:23,095 django.server INFO     "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+2020-04-14 09:38:23,095 django.server INFO     "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+2020-04-14 09:38:23,168 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+2020-04-14 09:38:23,168 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+2020-04-14 09:38:23,173 django.server INFO     "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+2020-04-14 09:38:23,173 django.server INFO     "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+2020-04-14 09:38:23,181 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+2020-04-14 09:38:23,181 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+2020-04-14 09:38:23,315 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-14 09:38:23,315 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-14 09:38:23,501 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-14 09:38:23,501 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-14 09:38:23,501 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-14 09:38:23,501 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-14 09:38:23,556 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:38:23,556 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:38:23,560 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:38:23,560 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:43:55,397 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:43:55,397 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:44:13,313 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2020-04-14 09:44:13,313 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2020-04-14 09:44:13,376 django.server INFO     "GET /admin/ HTTP/1.1" 200 4581
+2020-04-14 09:44:13,376 django.server INFO     "GET /admin/ HTTP/1.1" 200 4581
+2020-04-14 09:44:13,418 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+2020-04-14 09:44:13,418 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+2020-04-14 09:44:13,552 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2020-04-14 09:44:13,552 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2020-04-14 09:44:13,552 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2020-04-14 09:44:13,552 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2020-04-14 09:44:13,568 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-14 09:44:13,568 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-14 09:44:14,004 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:44:14,004 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 09:44:14,005 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:44:14,005 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 09:44:19,617 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 3165
+2020-04-14 09:44:19,617 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 3165
+2020-04-14 09:44:19,667 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 200 6190
+2020-04-14 09:44:19,667 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 200 6190
+2020-04-14 09:44:19,674 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:44:19,674 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:44:19,681 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+2020-04-14 09:44:19,681 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+2020-04-14 09:44:19,686 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 200 5723
+2020-04-14 09:44:19,686 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 200 5723
+2020-04-14 09:44:19,687 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 280364
+2020-04-14 09:44:19,687 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 280364
+2020-04-14 09:44:19,691 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+2020-04-14 09:44:19,691 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+2020-04-14 09:44:19,692 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+2020-04-14 09:44:19,692 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+2020-04-14 09:44:19,696 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+2020-04-14 09:44:19,696 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+2020-04-14 09:44:19,698 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+2020-04-14 09:44:19,698 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+2020-04-14 09:44:19,702 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+2020-04-14 09:44:19,702 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+2020-04-14 09:44:19,801 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2020-04-14 09:44:19,801 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2020-04-14 09:44:21,600 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3980
+2020-04-14 09:44:21,600 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3980
+2020-04-14 09:44:21,651 django.server INFO     "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+2020-04-14 09:44:21,652 django.server INFO     "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+2020-04-14 09:44:21,651 django.server INFO     "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+2020-04-14 09:44:21,653 django.server INFO     "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+2020-04-14 09:44:21,652 django.server INFO     "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+2020-04-14 09:44:21,653 django.server INFO     "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+2020-04-14 09:44:21,658 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:44:21,658 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:44:21,711 django.server INFO     "GET /static/admin/css/widgets.css HTTP/1.1" 200 10322
+2020-04-14 09:44:21,711 django.server INFO     "GET /static/admin/css/widgets.css HTTP/1.1" 200 10322
+2020-04-14 09:45:50,840 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 09:45:50,840 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 09:45:51,885 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:45:51,885 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:46:04,237 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:46:04,237 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:46:07,931 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 3165
+2020-04-14 09:46:07,931 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 3165
+2020-04-14 09:46:07,995 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:07,995 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:10,102 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:10,102 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:10,155 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:10,155 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:23,498 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:23,498 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:23,561 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 4556
+2020-04-14 09:46:23,561 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 4556
+2020-04-14 09:46:23,610 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:23,610 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:23,746 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2020-04-14 09:46:23,746 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2020-04-14 09:46:29,152 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:29,152 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:29,202 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:29,202 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:34,587 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:34,587 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:34,649 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 4802
+2020-04-14 09:46:34,649 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 4802
+2020-04-14 09:46:34,703 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:34,703 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:36,749 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:36,749 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:36,811 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:36,811 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:43,860 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:43,860 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:43,939 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 5047
+2020-04-14 09:46:43,939 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 5047
+2020-04-14 09:46:44,011 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:44,011 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:48,027 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:48,027 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 3967
+2020-04-14 09:46:48,095 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:48,095 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:54,621 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:54,621 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:46:54,670 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:46:54,670 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:46:54,734 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:46:54,734 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:01,642 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:01,642 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:01,704 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:01,704 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:01,771 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:01,771 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:07,761 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:07,761 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:07,803 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:07,803 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:07,850 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:07,850 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:13,709 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:13,709 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:13,757 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:13,757 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:13,823 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:13,823 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:19,946 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:19,946 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:19,992 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:19,992 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:20,055 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:20,055 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:30,023 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:30,023 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:30,065 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:30,065 django.server INFO     "GET /admin/app/season/add/ HTTP/1.1" 200 4205
+2020-04-14 09:47:30,128 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:30,128 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:40,070 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:40,070 django.server INFO     "POST /admin/app/season/add/ HTTP/1.1" 302 0
+2020-04-14 09:47:40,146 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 6765
+2020-04-14 09:47:40,146 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 6765
+2020-04-14 09:47:40,200 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:40,200 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:50,874 django.server INFO     "GET /admin/app/season/2019-20/change/ HTTP/1.1" 200 4217
+2020-04-14 09:47:50,874 django.server INFO     "GET /admin/app/season/2019-20/change/ HTTP/1.1" 200 4217
+2020-04-14 09:47:50,948 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:50,948 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:53,165 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:47:53,165 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:47:55,190 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:47:55,190 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:47:55,237 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:55,237 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:57,256 django.server INFO     "GET /admin/app/player_id/add/ HTTP/1.1" 200 7208
+2020-04-14 09:47:57,256 django.server INFO     "GET /admin/app/player_id/add/ HTTP/1.1" 200 7208
+2020-04-14 09:47:57,322 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:47:57,322 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:04,027 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:48:04,027 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:48:04,079 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:04,079 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:05,930 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:48:05,930 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:48:07,694 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:48:07,694 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:48:07,745 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:07,745 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:09,641 django.server INFO     "GET /admin/app/shot_data/add/ HTTP/1.1" 200 6625
+2020-04-14 09:48:09,641 django.server INFO     "GET /admin/app/shot_data/add/ HTTP/1.1" 200 6625
+2020-04-14 09:48:09,691 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:09,691 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:15,849 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:48:15,849 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:48:15,916 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:15,916 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:48:17,355 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:48:17,355 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:50:37,721 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 09:50:37,721 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 09:50:38,502 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:50:38,502 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:53:33,042 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:53:33,042 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:53:34,496 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 6561
+2020-04-14 09:53:34,496 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 6561
+2020-04-14 09:53:34,589 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:34,589 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:37,852 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:53:37,852 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:53:39,632 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:53:39,632 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:53:39,693 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:39,693 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:42,055 django.server INFO     "GET /admin/app/player_id/add/ HTTP/1.1" 200 7208
+2020-04-14 09:53:42,055 django.server INFO     "GET /admin/app/player_id/add/ HTTP/1.1" 200 7208
+2020-04-14 09:53:42,105 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:42,105 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:47,802 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:53:47,802 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 09:53:47,860 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:47,860 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:49,172 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:53:49,172 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:53:50,737 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:53:50,737 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:53:50,792 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:50,792 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:52,112 django.server INFO     "GET /admin/app/shot_data/add/ HTTP/1.1" 200 7679
+2020-04-14 09:53:52,112 django.server INFO     "GET /admin/app/shot_data/add/ HTTP/1.1" 200 7679
+2020-04-14 09:53:52,169 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:53:52,169 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:54:02,539 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:54:02,539 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 09:54:02,592 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:54:02,592 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 09:54:04,637 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:54:04,637 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 09:54:44,380 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 09:54:44,380 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 09:54:45,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 09:54:45,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 10:18:14,421 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 10:18:14,421 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 10:18:14,505 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:18:14,505 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:18:17,007 django.server INFO     "GET /admin/app/player_id/add/ HTTP/1.1" 200 7208
+2020-04-14 10:18:17,007 django.server INFO     "GET /admin/app/player_id/add/ HTTP/1.1" 200 7208
+2020-04-14 10:18:17,055 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:18:17,055 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:23,493 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 10:27:23,493 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 10:27:26,695 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 10:27:26,695 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 3186
+2020-04-14 10:27:26,753 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:26,753 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:28,245 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 10:27:28,245 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 10:27:30,120 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 6561
+2020-04-14 10:27:30,120 django.server INFO     "GET /admin/app/season/ HTTP/1.1" 200 6561
+2020-04-14 10:27:30,173 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:30,173 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:32,077 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 10:27:32,077 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 10:27:33,168 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 10:27:33,168 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 10:27:33,217 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:33,217 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:27:34,704 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 10:27:34,704 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 10:41:54,004 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 10:41:54,004 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 10:42:10,521 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:10,521 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:10,573 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:10,573 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:11,989 django.server INFO     "GET /admin/app/player_id/4919/change/ HTTP/1.1" 200 8007
+2020-04-14 10:42:11,989 django.server INFO     "GET /admin/app/player_id/4919/change/ HTTP/1.1" 200 8007
+2020-04-14 10:42:12,055 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:12,055 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:16,296 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:16,296 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:20,071 django.server INFO     "GET /admin/app/player_id/?p=49 HTTP/1.1" 200 9618
+2020-04-14 10:42:20,071 django.server INFO     "GET /admin/app/player_id/?p=49 HTTP/1.1" 200 9618
+2020-04-14 10:42:20,134 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:20,134 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:21,324 django.server INFO     "GET /admin/app/player_id/1/change/?_changelist_filters=p%3D49 HTTP/1.1" 200 8072
+2020-04-14 10:42:21,324 django.server INFO     "GET /admin/app/player_id/1/change/?_changelist_filters=p%3D49 HTTP/1.1" 200 8072
+2020-04-14 10:42:21,392 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:21,392 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:25,353 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:25,353 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:25,416 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:25,416 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:33,202 django.server INFO     "POST /admin/app/player_id/ HTTP/1.1" 200 791850
+2020-04-14 10:42:33,202 django.server INFO     "POST /admin/app/player_id/ HTTP/1.1" 200 791850
+2020-04-14 10:42:33,244 django.server INFO     "GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+2020-04-14 10:42:33,244 django.server INFO     "GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+2020-04-14 10:42:46,365 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:46,365 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 10:42:46,443 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 10:42:46,443 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:20:31,491 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:20:31,491 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:20:31,871 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:20:31,871 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:20:31,936 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2020-04-14 12:20:31,936 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2020-04-14 12:20:31,939 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2020-04-14 12:20:31,939 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2020-04-14 12:20:31,944 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2020-04-14 12:20:31,944 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2020-04-14 12:20:32,067 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-14 12:20:32,067 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2020-04-14 12:20:32,215 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2020-04-14 12:20:32,215 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2020-04-14 12:20:32,217 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2020-04-14 12:20:32,217 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2020-04-14 12:20:32,251 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-14 12:20:32,252 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-14 12:20:32,251 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+2020-04-14 12:20:32,252 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+2020-04-14 12:20:32,254 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-14 12:20:32,254 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+2020-04-14 12:21:11,224 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 12:21:11,224 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 12:21:11,292 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2020-04-14 12:21:11,292 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2020-04-14 12:21:11,301 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,301 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,305 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:21:11,305 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:21:11,305 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,305 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,309 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,309 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,309 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,309 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,313 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,313 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,313 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,313 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,318 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,318 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,318 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,318 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2020-04-14 12:21:11,442 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2020-04-14 12:21:11,442 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2020-04-14 12:21:14,031 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:21:14,031 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:28:08,641 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:28:08,641 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:28:13,181 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:28:13,181 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:28:15,756 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 29446
+2020-04-14 12:28:15,756 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 29446
+2020-04-14 12:28:15,816 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:28:15,816 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:28:23,455 django.server INFO     "POST /admin/app/shot_data/ HTTP/1.1" 200 19911
+2020-04-14 12:28:23,455 django.server INFO     "POST /admin/app/shot_data/ HTTP/1.1" 200 19911
+2020-04-14 12:28:27,753 django.server INFO     "POST /admin/app/shot_data/ HTTP/1.1" 302 0
+2020-04-14 12:28:27,753 django.server INFO     "POST /admin/app/shot_data/ HTTP/1.1" 302 0
+2020-04-14 12:28:28,065 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 29574
+2020-04-14 12:28:28,065 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 29574
+2020-04-14 12:28:28,108 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:28:28,108 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:28:28,219 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+2020-04-14 12:28:28,219 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+2020-04-14 12:30:55,330 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:30:55,330 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:30:56,205 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:30:56,205 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:31:06,582 django.server INFO     "GET / HTTP/1.1" 200 688
+2020-04-14 12:31:06,582 django.server INFO     "GET / HTTP/1.1" 200 688
+2020-04-14 12:31:06,655 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:31:06,655 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:31:20,143 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 12:31:20,143 django.server INFO     "GET /admin/app/shot_data/ HTTP/1.1" 200 3186
+2020-04-14 12:31:20,226 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:31:20,226 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:31:23,189 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:31:23,189 django.server INFO     "GET /admin/app/ HTTP/1.1" 200 3290
+2020-04-14 12:31:27,576 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:31:27,576 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:31:28,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:31:28,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:13,834 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:13,834 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:14,328 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 12:58:14,328 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 12:58:14,417 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:58:14,417 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+2020-04-14 12:58:25,570 django.server INFO     "GET / HTTP/1.1" 200 1664
+2020-04-14 12:58:25,570 django.server INFO     "GET / HTTP/1.1" 200 1664
+2020-04-14 12:58:25,640 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:25,640 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:49,507 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:58:49,507 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:58:50,262 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:50,262 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:51,746 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:58:51,746 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:58:52,497 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:52,497 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:58:52,796 django.server INFO     "GET / HTTP/1.1" 200 702
+2020-04-14 12:58:52,796 django.server INFO     "GET / HTTP/1.1" 200 702
+2020-04-14 12:58:52,845 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:52,845 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:58:52,992 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:58:52,992 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:58:52,992 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:58:52,992 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:06,180 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:59:06,180 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:59:06,967 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:59:06,967 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:59:44,441 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:59:44,441 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:59:45,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:59:45,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:59:46,155 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    name = obj.PLAYER_NAME
+AttributeError: 'Shot_data' object has no attribute 'PLAYER_NAME'
+2020-04-14 12:59:46,155 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    name = obj.PLAYER_NAME
+AttributeError: 'Shot_data' object has no attribute 'PLAYER_NAME'
+2020-04-14 12:59:46,158 django.server ERROR    "GET / HTTP/1.1" 500 76523
+2020-04-14 12:59:46,158 django.server ERROR    "GET / HTTP/1.1" 500 76523
+2020-04-14 12:59:46,587 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:46,587 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:46,588 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:46,588 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:55,423 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:59:55,423 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 12:59:56,272 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:59:56,272 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 12:59:56,824 django.server INFO     "GET / HTTP/1.1" 200 683
+2020-04-14 12:59:56,824 django.server INFO     "GET / HTTP/1.1" 200 683
+2020-04-14 12:59:56,862 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:59:56,862 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 12:59:57,023 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:57,023 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 12:59:57,024 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 12:59:57,024 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:18,281 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 13:00:18,281 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 13:00:19,097 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:00:19,097 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:00:19,380 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.values()
+AttributeError: 'Shot_data' object has no attribute 'values'
+2020-04-14 13:00:19,380 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.values()
+AttributeError: 'Shot_data' object has no attribute 'values'
+2020-04-14 13:00:19,381 django.server ERROR    "GET / HTTP/1.1" 500 76547
+2020-04-14 13:00:19,381 django.server ERROR    "GET / HTTP/1.1" 500 76547
+2020-04-14 13:00:19,694 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:19,694 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:19,695 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:19,695 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:25,446 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 13:00:25,446 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 13:00:26,182 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:00:26,182 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:00:26,793 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.data
+AttributeError: 'Shot_data' object has no attribute 'data'
+2020-04-14 13:00:26,793 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 9, in home
+    'banner': obj.data
+AttributeError: 'Shot_data' object has no attribute 'data'
+2020-04-14 13:00:26,795 django.server ERROR    "GET / HTTP/1.1" 500 76531
+2020-04-14 13:00:26,795 django.server ERROR    "GET / HTTP/1.1" 500 76531
+2020-04-14 13:00:27,065 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:27,065 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:00:27,066 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:00:27,066 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:01:40,822 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 13:01:40,822 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py changed, reloading.
+2020-04-14 13:01:41,643 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:01:41,643 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:01:42,707 django.server INFO     "GET / HTTP/1.1" 200 689
+2020-04-14 13:01:42,707 django.server INFO     "GET / HTTP/1.1" 200 689
+2020-04-14 13:01:42,769 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 13:01:42,769 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 13:01:42,921 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:01:42,921 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 13:01:42,922 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:01:42,922 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 13:08:41,989 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 13:08:41,989 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-14 13:08:43,115 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:08:43,115 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-14 13:22:12,448 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832
+2020-04-14 13:22:12,448 django.server INFO     "GET /admin/app/player_id/ HTTP/1.1" 200 28832

@@ -6,9 +6,6 @@ from matplotlib.patches import Circle, Rectangle, Arc
 
 class generateHexBinPlot():
 
-    def get_df():
-
-
     def draw_court():
         color='black'
         lw=2
@@ -87,5 +84,5 @@ class generateHexBinPlot():
         #joint_shot_chart.fig.set_size_inches(12,11)
         #ax = joint_shot_chart.ax_joint
         generateHexBinPlot.draw_court()
-        plt.hexbin(shot_df.LOC_X, shot_df.LOC_Y, bins='log')
+        plt.scatter(shot_df.LOC_X, shot_df.LOC_Y, bins='log')
         plt.show()

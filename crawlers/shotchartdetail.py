@@ -16,7 +16,8 @@ def get_shotchart_data(player_id, season):
     column_headers = response['resultSets'][0]['headers']
     shots = response['resultSets'][0]['rowSet']
     shot_df = pd.DataFrame(shots, columns=column_headers)
-    shot_df.drop(shot_df.columns[[0,1,2,5,6,8,9,10,11,12,13,14,15,16, 21]], axis=1, inplace=True)
+    shot_df.drop(shot_df.columns[[0,1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,21,22,23]], axis=1, inplace=True)
+    shot_df['SEASON'] = season
     return shot_df
 
 def parse_player_ids(season):
@@ -26,16 +27,17 @@ def parse_player_ids(season):
         data = json.load(f)
     id_list = []
     for each in tqdm(data):
-        id_list.append(each['id'])
+        id_list.append(each['fields']['PLAYER_ID'])
     return id_list
 
 def main(season):
     basepath = path.dirname(__file__)
     finalpath = basepath + f'/data/season_shotcharts/{season}/'
-    count = 0
     for each in tqdm(parse_player_ids(season)):
         shot_df = get_shotchart_data(each, season)
-        shot_df.to_json(finalpath + f'{each}.json')
+        data = [{'model': 'app.Shot_data', 'fields': {j: row[j] for j in shot_df.columns}} for i, row in shot_df.iterrows()]
+        with open(finalpath + f'{each}.json', 'w') as f:
+            json.dump(data, f)
         time.sleep(5)
 
 if __name__ == "__main__": 

@@ -1,5 +1,12 @@
+#GENERAL
 __pycache__
 
+#DATA
+env/
 crawlers/data/*
 crawlers/urls.py*
-env/
+
+#DJANGO
+django/env-django/
+django/nba_shotcharts/app/fixtures/*.json
+django/nba_shotcharts/db.sqlite3
