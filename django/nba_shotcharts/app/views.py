@@ -1,13 +1,12 @@
 from django.shortcuts import render
-from .models import Season, Player_id, Shot_data
+from .models import Season, Player_id
+from .create_charts import Return_Data_and_Charts
 # Create your views here.
 
 def home(request):
-    obj = Shot_data.objects.filter(SEASON='2010-11').filter(PLAYER_ID='202412').first()
-    ppid = obj.PLAYER_ID
-    p_obj = Player_id.objects.filter(SEASON='2010-11').filter(PLAYER_ID=ppid).first()
-
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
     context = {
-        'banner': p_obj.PLAYER_NAME
+        'x': x,
+        'y': y
     }
     return render(request, 'index.html', context)

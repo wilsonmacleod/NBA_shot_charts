@@ -7,7 +7,16 @@ Datastuctures
 django
     //-models
     //-fixtures
+    -figure creating classes
+        -more data
+            -win/loss
+            -h/a
+            -vs?
+        -frequency
+        -made
+        -missed
+        -all
+    -views
     -forms
     -templates
-    -views
     -css

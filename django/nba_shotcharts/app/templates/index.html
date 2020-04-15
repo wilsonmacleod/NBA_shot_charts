@@ -12,14 +12,21 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
 
+    <!--Plotly-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
         <title>Django DEV-MODE</title>
 
 </head>
 <body>
     <header class="site-header">
-        {{ banner }}
+        {{ x.PLAYER_NAME }}
+        
     </header>
     <main role="main" class="container">
+        {% autoescape off %}
+        <div>{{ y }}</div>
+    {% endautoescape %}
     </main>
 </body>
 </html>
