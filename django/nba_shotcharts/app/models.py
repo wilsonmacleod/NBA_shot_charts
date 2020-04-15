@@ -33,6 +33,7 @@ class Shot_data(models.Model):
 #           "SEASON": "", FOREIGNKEY
 #         }
     PLAYER_ID = models.CharField(max_length=25)
+    SHOT_DISTANCE=models.IntegerField()
     LOC_X = models.IntegerField()
     LOC_Y = models.IntegerField()
     SHOT_ATTEMPTED_FLAG = models.IntegerField()

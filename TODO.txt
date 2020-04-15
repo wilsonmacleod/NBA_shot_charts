@@ -9,9 +9,7 @@ django
     //-fixtures
     -figure creating classes
         -more data
-            -win/loss
-            -h/a
-            -vs?
+            -length
         -frequency
         -made
         -missed

@@ -1,2 +1,31 @@
 // partner CLI app
 // player season stats
+// add model fields and pull additional per-shot info
+
+
+// frequency/accuracy/advanced charts
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot
+
+df = pd.read_csv(r'C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\out.csv') #in g_drive
+
+f = matplotlib.pyplot.hexbin(df.LOC_X, df.LOC_Y, gridsize=51)
+
+xloc_hexs = f.get_offsets()[:, 0]
+yloc_hexes = x.get_offsets()[:, 1]
+shots_by_hex = f.get_array()
+
+
+made_x = df[df['SHOT_MADE_FLAG'] == 1]['LOC_X']
+made_y = df[df['SHOT_MADE_FLAG'] == 1]['LOC_Y']
+
+f_two = matplotlib.pyplot.hexbin(made_x, made_y, gridsize=51) #makes per hex
+
+made_per_hex = f.get_array()
+
+dataset = pd.DataFrame({
+    'xloc_hexs': xloc_hexs 
+    'yloc_hexes': yloc_hexes, 
+    'shots_by_hex': shots_by_hex},
+    'made_per_hex': made_per_hex)

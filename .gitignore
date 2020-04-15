@@ -10,3 +10,4 @@ crawlers/urls.py*
 django/env-django/
 django/nba_shotcharts/app/fixtures/*.json
 django/nba_shotcharts/db.sqlite3
+django/nba_shotcharts/app/logs/*

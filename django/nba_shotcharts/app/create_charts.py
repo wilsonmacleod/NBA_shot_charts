@@ -14,12 +14,15 @@ def format_to_df(raw_data):
     df = pd.DataFrame(list(raw_data.values()), columns=[
         'django_id', 
         'PLAYER_ID', 
+        'SHOT_DISTANCE',
         'LOC_X', 
         'LOC_Y',
         'SHOT_ATTEMPTED_FLAG',
         'SHOT_MADE_FLAG',
         'SEASON'])
-    df.drop(df.columns[[0,6]], axis=1, inplace=True)
+    df.drop(df.columns[[0,7]], axis=1, inplace=True)
+    print(df)
+    df.to_csv('out.csv', index=False) 
     return df
 
 def draw_plotly_court(fig, fig_width=700, margins=10):
@@ -196,7 +199,8 @@ def final_fig_gen(df):
                         marker=dict(
                             size=10,
                             line=dict(width=2, color='#333333'), 
-                            symbol='hexagon')
+                            symbol='hexagon'),
+                            text='',
                         )      
     fig.add_trace(missed)
 
@@ -209,7 +213,9 @@ def final_fig_gen(df):
                         marker=dict(
                             size=10,
                             line=dict(width=2, color='#333333'), 
-                            symbol='hexagon')
+                            symbol='hexagon'),
+                            text='',
+                            hoverinfo=None
                         )      
     fig.add_trace(made)
 

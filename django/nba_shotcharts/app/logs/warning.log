@@ -3024,3 +3024,1693 @@ NameError: name 'scatter' is not defined
 2020-04-14 20:22:38,345 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
 2020-04-14 20:23:54,468 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
 2020-04-14 20:23:54,468 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:43:11,699 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:43:11,699 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:43:12,515 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 22:43:12,515 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 22:43:12,516 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 22:43:12,516 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 22:47:49,182 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 224, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 213, in final_fig_gen
+    ticktext=['4-22-2020 4th quarts 4:23 remaining vs. hawks']
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\graph_objs\__init__.py", line 38588, in __init__
+    self._process_kwargs(**dict(arg, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3035, in _process_kwargs
+    self._raise_on_invalid_property_error(*invalid_kwargs.keys())
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3666, in _raise_on_invalid_property_error
+    prop_descriptions=self._prop_descriptions,
+ValueError: Invalid property specified for object of type plotly.graph_objs.Scatter: 'ticktext'
+
+    Valid properties:
+        cliponaxis
+            Determines whether or not markers and text nodes are
+            clipped about the subplot axes. To show markers and
+            text nodes above axis lines and tick labels, make sure
+            to set `xaxis.layer` and `yaxis.layer` to *below
+            traces*.
+        connectgaps
+            Determines whether or not gaps (i.e. {nan} or missing
+            values) in the provided data arrays are connected.
+        customdata
+            Assigns extra data each datum. This may be useful when
+            listening to hover, click and selection events. Note
+            that, "scatter" traces also appends customdata items in
+            the markers DOM elements
+        customdatasrc
+            Sets the source reference on Chart Studio Cloud for
+            customdata .
+        dx
+            Sets the x coordinate step. See `x0` for more info.
+        dy
+            Sets the y coordinate step. See `y0` for more info.
+        error_x
+            :class:`plotly.graph_objects.scatter.ErrorX` instance
+            or dict with compatible properties
+        error_y
+            :class:`plotly.graph_objects.scatter.ErrorY` instance
+            or dict with compatible properties
+        fill
+            Sets the area to fill with a solid color. Defaults to
+            "none" unless this trace is stacked, then it gets
+            "tonexty" ("tonextx") if `orientation` is "v" ("h") Use
+            with `fillcolor` if not "none". "tozerox" and "tozeroy"
+            fill to x=0 and y=0 respectively. "tonextx" and
+            "tonexty" fill between the endpoints of this trace and
+            the endpoints of the trace before it, connecting those
+            endpoints with straight lines (to make a stacked area
+            graph); if there is no trace before it, they behave
+            like "tozerox" and "tozeroy". "toself" connects the
+            endpoints of the trace (or each segment of the trace if
+            it has gaps) into a closed shape. "tonext" fills the
+            space between two traces if one completely encloses the
+            other (eg consecutive contour lines), and behaves like
+            "toself" if there is no trace before it. "tonext"
+            should not be used if one trace does not enclose the
+            other. Traces in a `stackgroup` will only fill to (or
+            be filled to) other traces in the same group. With
+            multiple `stackgroup`s or some traces stacked and some
+            not, if fill-linked traces are not already consecutive,
+            the later ones will be pushed down in the drawing
+            order.
+        fillcolor
+            Sets the fill color. Defaults to a half-transparent
+            variant of the line color, marker color, or marker line
+            color, whichever is available.
+        groupnorm
+            Only relevant when `stackgroup` is used, and only the
+            first `groupnorm` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the normalization for the sum of
+            this `stackgroup`. With "fraction", the value of each
+            trace at each location is divided by the sum of all
+            trace values at that location. "percent" is the same
+            but multiplied by 100 to show percentages. If there are
+            multiple subplots, or multiple `stackgroup`s on one
+            subplot, each will be normalized within its own set.
+        hoverinfo
+            Determines which trace information appear on hover. If
+            `none` or `skip` are set, no information is displayed
+            upon hovering. But, if `none` is set, click and hover
+            events are still fired.
+        hoverinfosrc
+            Sets the source reference on Chart Studio Cloud for
+            hoverinfo .
+        hoverlabel
+            :class:`plotly.graph_objects.scatter.Hoverlabel`
+            instance or dict with compatible properties
+        hoveron
+            Do the hover effects highlight individual points
+            (markers or line points) or do they highlight filled
+            regions? If the fill is "toself" or "tonext" and there
+            are no markers or text, then the default is "fills",
+            otherwise it is "points".
+        hovertemplate
+            Template string used for rendering the information that
+            appear on hover box. Note that this will override
+            `hoverinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. The variables
+            available in `hovertemplate` are the ones emitted as
+            event data described at this link
+            https://plotly.com/javascript/plotlyjs-events/#event-
+            data. Additionally, every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.  Anything contained in tag `<extra>` is
+            displayed in the secondary box, for example
+            "<extra>{fullData.name}</extra>". To hide the secondary
+            box completely, use an empty tag `<extra></extra>`.
+        hovertemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertemplate .
+        hovertext
+            Sets hover text elements associated with each (x,y)
+            pair. If a single string, the same string appears over
+            all the data points. If an array of string, the items
+            are mapped in order to the this trace's (x,y)
+            coordinates. To be seen, trace `hoverinfo` must contain
+            a "text" flag.
+        hovertextsrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertext .
+        ids
+            Assigns id labels to each datum. These ids for object
+            constancy of data points during animation. Should be an
+            array of strings, not numbers or any other type.
+        idssrc
+            Sets the source reference on Chart Studio Cloud for
+            ids .
+        legendgroup
+            Sets the legend group for this trace. Traces part of
+            the same legend group hide/show at the same time when
+            toggling legend items.
+        line
+            :class:`plotly.graph_objects.scatter.Line` instance or
+            dict with compatible properties
+        marker
+            :class:`plotly.graph_objects.scatter.Marker` instance
+            or dict with compatible properties
+        meta
+            Assigns extra meta information associated with this
+            trace that can be used in various text attributes.
+            Attributes such as trace `name`, graph, axis and
+            colorbar `title.text`, annotation `text`
+            `rangeselector`, `updatemenues` and `sliders` `label`
+            text all support `meta`. To access the trace `meta`
+            values in an attribute in the same trace, simply use
+            `%{meta[i]}` where `i` is the index or key of the
+            `meta` item in question. To access trace `meta` in
+            layout attributes, use `%{data[n[.meta[i]}` where `i`
+            is the index or key of the `meta` and `n` is the trace
+            index.
+        metasrc
+            Sets the source reference on Chart Studio Cloud for
+            meta .
+        mode
+            Determines the drawing mode for this scatter trace. If
+            the provided `mode` includes "text" then the `text`
+            elements appear at the coordinates. Otherwise, the
+            `text` elements appear on hover. If there are less than
+            20 points and the trace is not stacked then the default
+            is "lines+markers". Otherwise, "lines".
+        name
+            Sets the trace name. The trace name appear as the
+            legend item and on hover.
+        opacity
+            Sets the opacity of the trace.
+        orientation
+            Only relevant when `stackgroup` is used, and only the
+            first `orientation` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the stacking direction. With "v"
+            ("h"), the y (x) values of subsequent traces are added.
+            Also affects the default value of `fill`.
+        r
+            r coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the radial
+            coordinatesfor legacy polar chart only.
+        rsrc
+            Sets the source reference on Chart Studio Cloud for  r
+            .
+        selected
+            :class:`plotly.graph_objects.scatter.Selected` instance
+            or dict with compatible properties
+        selectedpoints
+            Array containing integer indices of selected points.
+            Has an effect only for traces that support selections.
+            Note that an empty array means an empty selection where
+            the `unselected` are turned on for all points, whereas,
+            any other non-array values means no selection all where
+            the `selected` and `unselected` styles have no effect.
+        showlegend
+            Determines whether or not an item corresponding to this
+            trace is shown in the legend.
+        stackgaps
+            Only relevant when `stackgroup` is used, and only the
+            first `stackgaps` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Determines how we handle locations at
+            which other traces in this group have data but this one
+            does not. With *infer zero* we insert a zero at these
+            locations. With "interpolate" we linearly interpolate
+            between existing values, and extrapolate a constant
+            beyond the existing values.
+        stackgroup
+            Set several scatter traces (on the same subplot) to the
+            same stackgroup in order to add their y values (or
+            their x values if `orientation` is "h"). If blank or
+            omitted this trace will not be stacked. Stacking also
+            turns `fill` on by default, using "tonexty" ("tonextx")
+            if `orientation` is "h" ("v") and sets the default
+            `mode` to "lines" irrespective of point count. You can
+            only stack on a numeric (linear or log) axis. Traces in
+            a `stackgroup` will only fill to (or be filled to)
+            other traces in the same group. With multiple
+            `stackgroup`s or some traces stacked and some not, if
+            fill-linked traces are not already consecutive, the
+            later ones will be pushed down in the drawing order.
+        stream
+            :class:`plotly.graph_objects.scatter.Stream` instance
+            or dict with compatible properties
+        t
+            t coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the
+            angular coordinatesfor legacy polar chart only.
+        text
+            Sets text elements associated with each (x,y) pair. If
+            a single string, the same string appears over all the
+            data points. If an array of string, the items are
+            mapped in order to the this trace's (x,y) coordinates.
+            If trace `hoverinfo` contains a "text" flag and
+            "hovertext" is not set, these elements will be seen in
+            the hover labels.
+        textfont
+            Sets the text font.
+        textposition
+            Sets the positions of the `text` elements with respects
+            to the (x,y) coordinates.
+        textpositionsrc
+            Sets the source reference on Chart Studio Cloud for
+            textposition .
+        textsrc
+            Sets the source reference on Chart Studio Cloud for
+            text .
+        texttemplate
+            Template string used for rendering the information text
+            that appear on points. Note that this will override
+            `textinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. Every attributes
+            that can be specified per-point (the ones that are
+            `arrayOk: true`) are available.
+        texttemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            texttemplate .
+        tsrc
+            Sets the source reference on Chart Studio Cloud for  t
+            .
+        uid
+            Assign an id to this trace, Use this to provide object
+            constancy between traces during animations and
+            transitions.
+        uirevision
+            Controls persistence of some user-driven changes to the
+            trace: `constraintrange` in `parcoords` traces, as well
+            as some `editable: true` modifications such as `name`
+            and `colorbar.title`. Defaults to `layout.uirevision`.
+            Note that other user-driven trace attribute changes are
+            controlled by `layout` attributes: `trace.visible` is
+            controlled by `layout.legend.uirevision`,
+            `selectedpoints` is controlled by
+            `layout.selectionrevision`, and `colorbar.(x|y)`
+            (accessible with `config: {editable: true}`) is
+            controlled by `layout.editrevision`. Trace changes are
+            tracked by `uid`, which only falls back on trace index
+            if no `uid` is provided. So if your app can add/remove
+            traces before the end of the `data` array, such that
+            the same trace has a different index, you can still
+            preserve user-driven changes if you give each trace a
+            `uid` that stays with it as it moves.
+        unselected
+            :class:`plotly.graph_objects.scatter.Unselected`
+            instance or dict with compatible properties
+        visible
+            Determines whether or not this trace is visible. If
+            "legendonly", the trace is not drawn, but can appear as
+            a legend item (provided that the legend itself is
+            visible).
+        x
+            Sets the x coordinates.
+        x0
+            Alternate to `x`. Builds a linear space of x
+            coordinates. Use with `dx` where `x0` is the starting
+            coordinate and `dx` the step.
+        xaxis
+            Sets a reference between this trace's x coordinates and
+            a 2D cartesian x axis. If "x" (the default value), the
+            x coordinates refer to `layout.xaxis`. If "x2", the x
+            coordinates refer to `layout.xaxis2`, and so on.
+        xcalendar
+            Sets the calendar system to use with `x` date data.
+        xsrc
+            Sets the source reference on Chart Studio Cloud for  x
+            .
+        y
+            Sets the y coordinates.
+        y0
+            Alternate to `y`. Builds a linear space of y
+            coordinates. Use with `dy` where `y0` is the starting
+            coordinate and `dy` the step.
+        yaxis
+            Sets a reference between this trace's y coordinates and
+            a 2D cartesian y axis. If "y" (the default value), the
+            y coordinates refer to `layout.yaxis`. If "y2", the y
+            coordinates refer to `layout.yaxis2`, and so on.
+        ycalendar
+            Sets the calendar system to use with `y` date data.
+        ysrc
+            Sets the source reference on Chart Studio Cloud for  y
+            .
+        
+2020-04-14 22:47:49,182 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 224, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 213, in final_fig_gen
+    ticktext=['4-22-2020 4th quarts 4:23 remaining vs. hawks']
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\graph_objs\__init__.py", line 38588, in __init__
+    self._process_kwargs(**dict(arg, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3035, in _process_kwargs
+    self._raise_on_invalid_property_error(*invalid_kwargs.keys())
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3666, in _raise_on_invalid_property_error
+    prop_descriptions=self._prop_descriptions,
+ValueError: Invalid property specified for object of type plotly.graph_objs.Scatter: 'ticktext'
+
+    Valid properties:
+        cliponaxis
+            Determines whether or not markers and text nodes are
+            clipped about the subplot axes. To show markers and
+            text nodes above axis lines and tick labels, make sure
+            to set `xaxis.layer` and `yaxis.layer` to *below
+            traces*.
+        connectgaps
+            Determines whether or not gaps (i.e. {nan} or missing
+            values) in the provided data arrays are connected.
+        customdata
+            Assigns extra data each datum. This may be useful when
+            listening to hover, click and selection events. Note
+            that, "scatter" traces also appends customdata items in
+            the markers DOM elements
+        customdatasrc
+            Sets the source reference on Chart Studio Cloud for
+            customdata .
+        dx
+            Sets the x coordinate step. See `x0` for more info.
+        dy
+            Sets the y coordinate step. See `y0` for more info.
+        error_x
+            :class:`plotly.graph_objects.scatter.ErrorX` instance
+            or dict with compatible properties
+        error_y
+            :class:`plotly.graph_objects.scatter.ErrorY` instance
+            or dict with compatible properties
+        fill
+            Sets the area to fill with a solid color. Defaults to
+            "none" unless this trace is stacked, then it gets
+            "tonexty" ("tonextx") if `orientation` is "v" ("h") Use
+            with `fillcolor` if not "none". "tozerox" and "tozeroy"
+            fill to x=0 and y=0 respectively. "tonextx" and
+            "tonexty" fill between the endpoints of this trace and
+            the endpoints of the trace before it, connecting those
+            endpoints with straight lines (to make a stacked area
+            graph); if there is no trace before it, they behave
+            like "tozerox" and "tozeroy". "toself" connects the
+            endpoints of the trace (or each segment of the trace if
+            it has gaps) into a closed shape. "tonext" fills the
+            space between two traces if one completely encloses the
+            other (eg consecutive contour lines), and behaves like
+            "toself" if there is no trace before it. "tonext"
+            should not be used if one trace does not enclose the
+            other. Traces in a `stackgroup` will only fill to (or
+            be filled to) other traces in the same group. With
+            multiple `stackgroup`s or some traces stacked and some
+            not, if fill-linked traces are not already consecutive,
+            the later ones will be pushed down in the drawing
+            order.
+        fillcolor
+            Sets the fill color. Defaults to a half-transparent
+            variant of the line color, marker color, or marker line
+            color, whichever is available.
+        groupnorm
+            Only relevant when `stackgroup` is used, and only the
+            first `groupnorm` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the normalization for the sum of
+            this `stackgroup`. With "fraction", the value of each
+            trace at each location is divided by the sum of all
+            trace values at that location. "percent" is the same
+            but multiplied by 100 to show percentages. If there are
+            multiple subplots, or multiple `stackgroup`s on one
+            subplot, each will be normalized within its own set.
+        hoverinfo
+            Determines which trace information appear on hover. If
+            `none` or `skip` are set, no information is displayed
+            upon hovering. But, if `none` is set, click and hover
+            events are still fired.
+        hoverinfosrc
+            Sets the source reference on Chart Studio Cloud for
+            hoverinfo .
+        hoverlabel
+            :class:`plotly.graph_objects.scatter.Hoverlabel`
+            instance or dict with compatible properties
+        hoveron
+            Do the hover effects highlight individual points
+            (markers or line points) or do they highlight filled
+            regions? If the fill is "toself" or "tonext" and there
+            are no markers or text, then the default is "fills",
+            otherwise it is "points".
+        hovertemplate
+            Template string used for rendering the information that
+            appear on hover box. Note that this will override
+            `hoverinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. The variables
+            available in `hovertemplate` are the ones emitted as
+            event data described at this link
+            https://plotly.com/javascript/plotlyjs-events/#event-
+            data. Additionally, every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.  Anything contained in tag `<extra>` is
+            displayed in the secondary box, for example
+            "<extra>{fullData.name}</extra>". To hide the secondary
+            box completely, use an empty tag `<extra></extra>`.
+        hovertemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertemplate .
+        hovertext
+            Sets hover text elements associated with each (x,y)
+            pair. If a single string, the same string appears over
+            all the data points. If an array of string, the items
+            are mapped in order to the this trace's (x,y)
+            coordinates. To be seen, trace `hoverinfo` must contain
+            a "text" flag.
+        hovertextsrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertext .
+        ids
+            Assigns id labels to each datum. These ids for object
+            constancy of data points during animation. Should be an
+            array of strings, not numbers or any other type.
+        idssrc
+            Sets the source reference on Chart Studio Cloud for
+            ids .
+        legendgroup
+            Sets the legend group for this trace. Traces part of
+            the same legend group hide/show at the same time when
+            toggling legend items.
+        line
+            :class:`plotly.graph_objects.scatter.Line` instance or
+            dict with compatible properties
+        marker
+            :class:`plotly.graph_objects.scatter.Marker` instance
+            or dict with compatible properties
+        meta
+            Assigns extra meta information associated with this
+            trace that can be used in various text attributes.
+            Attributes such as trace `name`, graph, axis and
+            colorbar `title.text`, annotation `text`
+            `rangeselector`, `updatemenues` and `sliders` `label`
+            text all support `meta`. To access the trace `meta`
+            values in an attribute in the same trace, simply use
+            `%{meta[i]}` where `i` is the index or key of the
+            `meta` item in question. To access trace `meta` in
+            layout attributes, use `%{data[n[.meta[i]}` where `i`
+            is the index or key of the `meta` and `n` is the trace
+            index.
+        metasrc
+            Sets the source reference on Chart Studio Cloud for
+            meta .
+        mode
+            Determines the drawing mode for this scatter trace. If
+            the provided `mode` includes "text" then the `text`
+            elements appear at the coordinates. Otherwise, the
+            `text` elements appear on hover. If there are less than
+            20 points and the trace is not stacked then the default
+            is "lines+markers". Otherwise, "lines".
+        name
+            Sets the trace name. The trace name appear as the
+            legend item and on hover.
+        opacity
+            Sets the opacity of the trace.
+        orientation
+            Only relevant when `stackgroup` is used, and only the
+            first `orientation` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the stacking direction. With "v"
+            ("h"), the y (x) values of subsequent traces are added.
+            Also affects the default value of `fill`.
+        r
+            r coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the radial
+            coordinatesfor legacy polar chart only.
+        rsrc
+            Sets the source reference on Chart Studio Cloud for  r
+            .
+        selected
+            :class:`plotly.graph_objects.scatter.Selected` instance
+            or dict with compatible properties
+        selectedpoints
+            Array containing integer indices of selected points.
+            Has an effect only for traces that support selections.
+            Note that an empty array means an empty selection where
+            the `unselected` are turned on for all points, whereas,
+            any other non-array values means no selection all where
+            the `selected` and `unselected` styles have no effect.
+        showlegend
+            Determines whether or not an item corresponding to this
+            trace is shown in the legend.
+        stackgaps
+            Only relevant when `stackgroup` is used, and only the
+            first `stackgaps` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Determines how we handle locations at
+            which other traces in this group have data but this one
+            does not. With *infer zero* we insert a zero at these
+            locations. With "interpolate" we linearly interpolate
+            between existing values, and extrapolate a constant
+            beyond the existing values.
+        stackgroup
+            Set several scatter traces (on the same subplot) to the
+            same stackgroup in order to add their y values (or
+            their x values if `orientation` is "h"). If blank or
+            omitted this trace will not be stacked. Stacking also
+            turns `fill` on by default, using "tonexty" ("tonextx")
+            if `orientation` is "h" ("v") and sets the default
+            `mode` to "lines" irrespective of point count. You can
+            only stack on a numeric (linear or log) axis. Traces in
+            a `stackgroup` will only fill to (or be filled to)
+            other traces in the same group. With multiple
+            `stackgroup`s or some traces stacked and some not, if
+            fill-linked traces are not already consecutive, the
+            later ones will be pushed down in the drawing order.
+        stream
+            :class:`plotly.graph_objects.scatter.Stream` instance
+            or dict with compatible properties
+        t
+            t coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the
+            angular coordinatesfor legacy polar chart only.
+        text
+            Sets text elements associated with each (x,y) pair. If
+            a single string, the same string appears over all the
+            data points. If an array of string, the items are
+            mapped in order to the this trace's (x,y) coordinates.
+            If trace `hoverinfo` contains a "text" flag and
+            "hovertext" is not set, these elements will be seen in
+            the hover labels.
+        textfont
+            Sets the text font.
+        textposition
+            Sets the positions of the `text` elements with respects
+            to the (x,y) coordinates.
+        textpositionsrc
+            Sets the source reference on Chart Studio Cloud for
+            textposition .
+        textsrc
+            Sets the source reference on Chart Studio Cloud for
+            text .
+        texttemplate
+            Template string used for rendering the information text
+            that appear on points. Note that this will override
+            `textinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. Every attributes
+            that can be specified per-point (the ones that are
+            `arrayOk: true`) are available.
+        texttemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            texttemplate .
+        tsrc
+            Sets the source reference on Chart Studio Cloud for  t
+            .
+        uid
+            Assign an id to this trace, Use this to provide object
+            constancy between traces during animations and
+            transitions.
+        uirevision
+            Controls persistence of some user-driven changes to the
+            trace: `constraintrange` in `parcoords` traces, as well
+            as some `editable: true` modifications such as `name`
+            and `colorbar.title`. Defaults to `layout.uirevision`.
+            Note that other user-driven trace attribute changes are
+            controlled by `layout` attributes: `trace.visible` is
+            controlled by `layout.legend.uirevision`,
+            `selectedpoints` is controlled by
+            `layout.selectionrevision`, and `colorbar.(x|y)`
+            (accessible with `config: {editable: true}`) is
+            controlled by `layout.editrevision`. Trace changes are
+            tracked by `uid`, which only falls back on trace index
+            if no `uid` is provided. So if your app can add/remove
+            traces before the end of the `data` array, such that
+            the same trace has a different index, you can still
+            preserve user-driven changes if you give each trace a
+            `uid` that stays with it as it moves.
+        unselected
+            :class:`plotly.graph_objects.scatter.Unselected`
+            instance or dict with compatible properties
+        visible
+            Determines whether or not this trace is visible. If
+            "legendonly", the trace is not drawn, but can appear as
+            a legend item (provided that the legend itself is
+            visible).
+        x
+            Sets the x coordinates.
+        x0
+            Alternate to `x`. Builds a linear space of x
+            coordinates. Use with `dx` where `x0` is the starting
+            coordinate and `dx` the step.
+        xaxis
+            Sets a reference between this trace's x coordinates and
+            a 2D cartesian x axis. If "x" (the default value), the
+            x coordinates refer to `layout.xaxis`. If "x2", the x
+            coordinates refer to `layout.xaxis2`, and so on.
+        xcalendar
+            Sets the calendar system to use with `x` date data.
+        xsrc
+            Sets the source reference on Chart Studio Cloud for  x
+            .
+        y
+            Sets the y coordinates.
+        y0
+            Alternate to `y`. Builds a linear space of y
+            coordinates. Use with `dy` where `y0` is the starting
+            coordinate and `dy` the step.
+        yaxis
+            Sets a reference between this trace's y coordinates and
+            a 2D cartesian y axis. If "y" (the default value), the
+            y coordinates refer to `layout.yaxis`. If "y2", the y
+            coordinates refer to `layout.yaxis2`, and so on.
+        ycalendar
+            Sets the calendar system to use with `y` date data.
+        ysrc
+            Sets the source reference on Chart Studio Cloud for  y
+            .
+        
+2020-04-14 22:47:49,228 django.server ERROR    "GET / HTTP/1.1" 500 175605
+2020-04-14 22:47:49,228 django.server ERROR    "GET / HTTP/1.1" 500 175605
+2020-04-14 22:49:04,967 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 224, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 213, in final_fig_gen
+    symbol='hexagon')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\graph_objs\__init__.py", line 38588, in __init__
+    self._process_kwargs(**dict(arg, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3035, in _process_kwargs
+    self._raise_on_invalid_property_error(*invalid_kwargs.keys())
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3666, in _raise_on_invalid_property_error
+    prop_descriptions=self._prop_descriptions,
+ValueError: Invalid property specified for object of type plotly.graph_objs.Scatter: 'ticktext'
+
+    Valid properties:
+        cliponaxis
+            Determines whether or not markers and text nodes are
+            clipped about the subplot axes. To show markers and
+            text nodes above axis lines and tick labels, make sure
+            to set `xaxis.layer` and `yaxis.layer` to *below
+            traces*.
+        connectgaps
+            Determines whether or not gaps (i.e. {nan} or missing
+            values) in the provided data arrays are connected.
+        customdata
+            Assigns extra data each datum. This may be useful when
+            listening to hover, click and selection events. Note
+            that, "scatter" traces also appends customdata items in
+            the markers DOM elements
+        customdatasrc
+            Sets the source reference on Chart Studio Cloud for
+            customdata .
+        dx
+            Sets the x coordinate step. See `x0` for more info.
+        dy
+            Sets the y coordinate step. See `y0` for more info.
+        error_x
+            :class:`plotly.graph_objects.scatter.ErrorX` instance
+            or dict with compatible properties
+        error_y
+            :class:`plotly.graph_objects.scatter.ErrorY` instance
+            or dict with compatible properties
+        fill
+            Sets the area to fill with a solid color. Defaults to
+            "none" unless this trace is stacked, then it gets
+            "tonexty" ("tonextx") if `orientation` is "v" ("h") Use
+            with `fillcolor` if not "none". "tozerox" and "tozeroy"
+            fill to x=0 and y=0 respectively. "tonextx" and
+            "tonexty" fill between the endpoints of this trace and
+            the endpoints of the trace before it, connecting those
+            endpoints with straight lines (to make a stacked area
+            graph); if there is no trace before it, they behave
+            like "tozerox" and "tozeroy". "toself" connects the
+            endpoints of the trace (or each segment of the trace if
+            it has gaps) into a closed shape. "tonext" fills the
+            space between two traces if one completely encloses the
+            other (eg consecutive contour lines), and behaves like
+            "toself" if there is no trace before it. "tonext"
+            should not be used if one trace does not enclose the
+            other. Traces in a `stackgroup` will only fill to (or
+            be filled to) other traces in the same group. With
+            multiple `stackgroup`s or some traces stacked and some
+            not, if fill-linked traces are not already consecutive,
+            the later ones will be pushed down in the drawing
+            order.
+        fillcolor
+            Sets the fill color. Defaults to a half-transparent
+            variant of the line color, marker color, or marker line
+            color, whichever is available.
+        groupnorm
+            Only relevant when `stackgroup` is used, and only the
+            first `groupnorm` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the normalization for the sum of
+            this `stackgroup`. With "fraction", the value of each
+            trace at each location is divided by the sum of all
+            trace values at that location. "percent" is the same
+            but multiplied by 100 to show percentages. If there are
+            multiple subplots, or multiple `stackgroup`s on one
+            subplot, each will be normalized within its own set.
+        hoverinfo
+            Determines which trace information appear on hover. If
+            `none` or `skip` are set, no information is displayed
+            upon hovering. But, if `none` is set, click and hover
+            events are still fired.
+        hoverinfosrc
+            Sets the source reference on Chart Studio Cloud for
+            hoverinfo .
+        hoverlabel
+            :class:`plotly.graph_objects.scatter.Hoverlabel`
+            instance or dict with compatible properties
+        hoveron
+            Do the hover effects highlight individual points
+            (markers or line points) or do they highlight filled
+            regions? If the fill is "toself" or "tonext" and there
+            are no markers or text, then the default is "fills",
+            otherwise it is "points".
+        hovertemplate
+            Template string used for rendering the information that
+            appear on hover box. Note that this will override
+            `hoverinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. The variables
+            available in `hovertemplate` are the ones emitted as
+            event data described at this link
+            https://plotly.com/javascript/plotlyjs-events/#event-
+            data. Additionally, every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.  Anything contained in tag `<extra>` is
+            displayed in the secondary box, for example
+            "<extra>{fullData.name}</extra>". To hide the secondary
+            box completely, use an empty tag `<extra></extra>`.
+        hovertemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertemplate .
+        hovertext
+            Sets hover text elements associated with each (x,y)
+            pair. If a single string, the same string appears over
+            all the data points. If an array of string, the items
+            are mapped in order to the this trace's (x,y)
+            coordinates. To be seen, trace `hoverinfo` must contain
+            a "text" flag.
+        hovertextsrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertext .
+        ids
+            Assigns id labels to each datum. These ids for object
+            constancy of data points during animation. Should be an
+            array of strings, not numbers or any other type.
+        idssrc
+            Sets the source reference on Chart Studio Cloud for
+            ids .
+        legendgroup
+            Sets the legend group for this trace. Traces part of
+            the same legend group hide/show at the same time when
+            toggling legend items.
+        line
+            :class:`plotly.graph_objects.scatter.Line` instance or
+            dict with compatible properties
+        marker
+            :class:`plotly.graph_objects.scatter.Marker` instance
+            or dict with compatible properties
+        meta
+            Assigns extra meta information associated with this
+            trace that can be used in various text attributes.
+            Attributes such as trace `name`, graph, axis and
+            colorbar `title.text`, annotation `text`
+            `rangeselector`, `updatemenues` and `sliders` `label`
+            text all support `meta`. To access the trace `meta`
+            values in an attribute in the same trace, simply use
+            `%{meta[i]}` where `i` is the index or key of the
+            `meta` item in question. To access trace `meta` in
+            layout attributes, use `%{data[n[.meta[i]}` where `i`
+            is the index or key of the `meta` and `n` is the trace
+            index.
+        metasrc
+            Sets the source reference on Chart Studio Cloud for
+            meta .
+        mode
+            Determines the drawing mode for this scatter trace. If
+            the provided `mode` includes "text" then the `text`
+            elements appear at the coordinates. Otherwise, the
+            `text` elements appear on hover. If there are less than
+            20 points and the trace is not stacked then the default
+            is "lines+markers". Otherwise, "lines".
+        name
+            Sets the trace name. The trace name appear as the
+            legend item and on hover.
+        opacity
+            Sets the opacity of the trace.
+        orientation
+            Only relevant when `stackgroup` is used, and only the
+            first `orientation` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the stacking direction. With "v"
+            ("h"), the y (x) values of subsequent traces are added.
+            Also affects the default value of `fill`.
+        r
+            r coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the radial
+            coordinatesfor legacy polar chart only.
+        rsrc
+            Sets the source reference on Chart Studio Cloud for  r
+            .
+        selected
+            :class:`plotly.graph_objects.scatter.Selected` instance
+            or dict with compatible properties
+        selectedpoints
+            Array containing integer indices of selected points.
+            Has an effect only for traces that support selections.
+            Note that an empty array means an empty selection where
+            the `unselected` are turned on for all points, whereas,
+            any other non-array values means no selection all where
+            the `selected` and `unselected` styles have no effect.
+        showlegend
+            Determines whether or not an item corresponding to this
+            trace is shown in the legend.
+        stackgaps
+            Only relevant when `stackgroup` is used, and only the
+            first `stackgaps` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Determines how we handle locations at
+            which other traces in this group have data but this one
+            does not. With *infer zero* we insert a zero at these
+            locations. With "interpolate" we linearly interpolate
+            between existing values, and extrapolate a constant
+            beyond the existing values.
+        stackgroup
+            Set several scatter traces (on the same subplot) to the
+            same stackgroup in order to add their y values (or
+            their x values if `orientation` is "h"). If blank or
+            omitted this trace will not be stacked. Stacking also
+            turns `fill` on by default, using "tonexty" ("tonextx")
+            if `orientation` is "h" ("v") and sets the default
+            `mode` to "lines" irrespective of point count. You can
+            only stack on a numeric (linear or log) axis. Traces in
+            a `stackgroup` will only fill to (or be filled to)
+            other traces in the same group. With multiple
+            `stackgroup`s or some traces stacked and some not, if
+            fill-linked traces are not already consecutive, the
+            later ones will be pushed down in the drawing order.
+        stream
+            :class:`plotly.graph_objects.scatter.Stream` instance
+            or dict with compatible properties
+        t
+            t coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the
+            angular coordinatesfor legacy polar chart only.
+        text
+            Sets text elements associated with each (x,y) pair. If
+            a single string, the same string appears over all the
+            data points. If an array of string, the items are
+            mapped in order to the this trace's (x,y) coordinates.
+            If trace `hoverinfo` contains a "text" flag and
+            "hovertext" is not set, these elements will be seen in
+            the hover labels.
+        textfont
+            Sets the text font.
+        textposition
+            Sets the positions of the `text` elements with respects
+            to the (x,y) coordinates.
+        textpositionsrc
+            Sets the source reference on Chart Studio Cloud for
+            textposition .
+        textsrc
+            Sets the source reference on Chart Studio Cloud for
+            text .
+        texttemplate
+            Template string used for rendering the information text
+            that appear on points. Note that this will override
+            `textinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. Every attributes
+            that can be specified per-point (the ones that are
+            `arrayOk: true`) are available.
+        texttemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            texttemplate .
+        tsrc
+            Sets the source reference on Chart Studio Cloud for  t
+            .
+        uid
+            Assign an id to this trace, Use this to provide object
+            constancy between traces during animations and
+            transitions.
+        uirevision
+            Controls persistence of some user-driven changes to the
+            trace: `constraintrange` in `parcoords` traces, as well
+            as some `editable: true` modifications such as `name`
+            and `colorbar.title`. Defaults to `layout.uirevision`.
+            Note that other user-driven trace attribute changes are
+            controlled by `layout` attributes: `trace.visible` is
+            controlled by `layout.legend.uirevision`,
+            `selectedpoints` is controlled by
+            `layout.selectionrevision`, and `colorbar.(x|y)`
+            (accessible with `config: {editable: true}`) is
+            controlled by `layout.editrevision`. Trace changes are
+            tracked by `uid`, which only falls back on trace index
+            if no `uid` is provided. So if your app can add/remove
+            traces before the end of the `data` array, such that
+            the same trace has a different index, you can still
+            preserve user-driven changes if you give each trace a
+            `uid` that stays with it as it moves.
+        unselected
+            :class:`plotly.graph_objects.scatter.Unselected`
+            instance or dict with compatible properties
+        visible
+            Determines whether or not this trace is visible. If
+            "legendonly", the trace is not drawn, but can appear as
+            a legend item (provided that the legend itself is
+            visible).
+        x
+            Sets the x coordinates.
+        x0
+            Alternate to `x`. Builds a linear space of x
+            coordinates. Use with `dx` where `x0` is the starting
+            coordinate and `dx` the step.
+        xaxis
+            Sets a reference between this trace's x coordinates and
+            a 2D cartesian x axis. If "x" (the default value), the
+            x coordinates refer to `layout.xaxis`. If "x2", the x
+            coordinates refer to `layout.xaxis2`, and so on.
+        xcalendar
+            Sets the calendar system to use with `x` date data.
+        xsrc
+            Sets the source reference on Chart Studio Cloud for  x
+            .
+        y
+            Sets the y coordinates.
+        y0
+            Alternate to `y`. Builds a linear space of y
+            coordinates. Use with `dy` where `y0` is the starting
+            coordinate and `dy` the step.
+        yaxis
+            Sets a reference between this trace's y coordinates and
+            a 2D cartesian y axis. If "y" (the default value), the
+            y coordinates refer to `layout.yaxis`. If "y2", the y
+            coordinates refer to `layout.yaxis2`, and so on.
+        ycalendar
+            Sets the calendar system to use with `y` date data.
+        ysrc
+            Sets the source reference on Chart Studio Cloud for  y
+            .
+        
+2020-04-14 22:49:04,967 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 224, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 213, in final_fig_gen
+    symbol='hexagon')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\graph_objs\__init__.py", line 38588, in __init__
+    self._process_kwargs(**dict(arg, **kwargs))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3035, in _process_kwargs
+    self._raise_on_invalid_property_error(*invalid_kwargs.keys())
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\plotly\basedatatypes.py", line 3666, in _raise_on_invalid_property_error
+    prop_descriptions=self._prop_descriptions,
+ValueError: Invalid property specified for object of type plotly.graph_objs.Scatter: 'ticktext'
+
+    Valid properties:
+        cliponaxis
+            Determines whether or not markers and text nodes are
+            clipped about the subplot axes. To show markers and
+            text nodes above axis lines and tick labels, make sure
+            to set `xaxis.layer` and `yaxis.layer` to *below
+            traces*.
+        connectgaps
+            Determines whether or not gaps (i.e. {nan} or missing
+            values) in the provided data arrays are connected.
+        customdata
+            Assigns extra data each datum. This may be useful when
+            listening to hover, click and selection events. Note
+            that, "scatter" traces also appends customdata items in
+            the markers DOM elements
+        customdatasrc
+            Sets the source reference on Chart Studio Cloud for
+            customdata .
+        dx
+            Sets the x coordinate step. See `x0` for more info.
+        dy
+            Sets the y coordinate step. See `y0` for more info.
+        error_x
+            :class:`plotly.graph_objects.scatter.ErrorX` instance
+            or dict with compatible properties
+        error_y
+            :class:`plotly.graph_objects.scatter.ErrorY` instance
+            or dict with compatible properties
+        fill
+            Sets the area to fill with a solid color. Defaults to
+            "none" unless this trace is stacked, then it gets
+            "tonexty" ("tonextx") if `orientation` is "v" ("h") Use
+            with `fillcolor` if not "none". "tozerox" and "tozeroy"
+            fill to x=0 and y=0 respectively. "tonextx" and
+            "tonexty" fill between the endpoints of this trace and
+            the endpoints of the trace before it, connecting those
+            endpoints with straight lines (to make a stacked area
+            graph); if there is no trace before it, they behave
+            like "tozerox" and "tozeroy". "toself" connects the
+            endpoints of the trace (or each segment of the trace if
+            it has gaps) into a closed shape. "tonext" fills the
+            space between two traces if one completely encloses the
+            other (eg consecutive contour lines), and behaves like
+            "toself" if there is no trace before it. "tonext"
+            should not be used if one trace does not enclose the
+            other. Traces in a `stackgroup` will only fill to (or
+            be filled to) other traces in the same group. With
+            multiple `stackgroup`s or some traces stacked and some
+            not, if fill-linked traces are not already consecutive,
+            the later ones will be pushed down in the drawing
+            order.
+        fillcolor
+            Sets the fill color. Defaults to a half-transparent
+            variant of the line color, marker color, or marker line
+            color, whichever is available.
+        groupnorm
+            Only relevant when `stackgroup` is used, and only the
+            first `groupnorm` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the normalization for the sum of
+            this `stackgroup`. With "fraction", the value of each
+            trace at each location is divided by the sum of all
+            trace values at that location. "percent" is the same
+            but multiplied by 100 to show percentages. If there are
+            multiple subplots, or multiple `stackgroup`s on one
+            subplot, each will be normalized within its own set.
+        hoverinfo
+            Determines which trace information appear on hover. If
+            `none` or `skip` are set, no information is displayed
+            upon hovering. But, if `none` is set, click and hover
+            events are still fired.
+        hoverinfosrc
+            Sets the source reference on Chart Studio Cloud for
+            hoverinfo .
+        hoverlabel
+            :class:`plotly.graph_objects.scatter.Hoverlabel`
+            instance or dict with compatible properties
+        hoveron
+            Do the hover effects highlight individual points
+            (markers or line points) or do they highlight filled
+            regions? If the fill is "toself" or "tonext" and there
+            are no markers or text, then the default is "fills",
+            otherwise it is "points".
+        hovertemplate
+            Template string used for rendering the information that
+            appear on hover box. Note that this will override
+            `hoverinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. The variables
+            available in `hovertemplate` are the ones emitted as
+            event data described at this link
+            https://plotly.com/javascript/plotlyjs-events/#event-
+            data. Additionally, every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.  Anything contained in tag `<extra>` is
+            displayed in the secondary box, for example
+            "<extra>{fullData.name}</extra>". To hide the secondary
+            box completely, use an empty tag `<extra></extra>`.
+        hovertemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertemplate .
+        hovertext
+            Sets hover text elements associated with each (x,y)
+            pair. If a single string, the same string appears over
+            all the data points. If an array of string, the items
+            are mapped in order to the this trace's (x,y)
+            coordinates. To be seen, trace `hoverinfo` must contain
+            a "text" flag.
+        hovertextsrc
+            Sets the source reference on Chart Studio Cloud for
+            hovertext .
+        ids
+            Assigns id labels to each datum. These ids for object
+            constancy of data points during animation. Should be an
+            array of strings, not numbers or any other type.
+        idssrc
+            Sets the source reference on Chart Studio Cloud for
+            ids .
+        legendgroup
+            Sets the legend group for this trace. Traces part of
+            the same legend group hide/show at the same time when
+            toggling legend items.
+        line
+            :class:`plotly.graph_objects.scatter.Line` instance or
+            dict with compatible properties
+        marker
+            :class:`plotly.graph_objects.scatter.Marker` instance
+            or dict with compatible properties
+        meta
+            Assigns extra meta information associated with this
+            trace that can be used in various text attributes.
+            Attributes such as trace `name`, graph, axis and
+            colorbar `title.text`, annotation `text`
+            `rangeselector`, `updatemenues` and `sliders` `label`
+            text all support `meta`. To access the trace `meta`
+            values in an attribute in the same trace, simply use
+            `%{meta[i]}` where `i` is the index or key of the
+            `meta` item in question. To access trace `meta` in
+            layout attributes, use `%{data[n[.meta[i]}` where `i`
+            is the index or key of the `meta` and `n` is the trace
+            index.
+        metasrc
+            Sets the source reference on Chart Studio Cloud for
+            meta .
+        mode
+            Determines the drawing mode for this scatter trace. If
+            the provided `mode` includes "text" then the `text`
+            elements appear at the coordinates. Otherwise, the
+            `text` elements appear on hover. If there are less than
+            20 points and the trace is not stacked then the default
+            is "lines+markers". Otherwise, "lines".
+        name
+            Sets the trace name. The trace name appear as the
+            legend item and on hover.
+        opacity
+            Sets the opacity of the trace.
+        orientation
+            Only relevant when `stackgroup` is used, and only the
+            first `orientation` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Sets the stacking direction. With "v"
+            ("h"), the y (x) values of subsequent traces are added.
+            Also affects the default value of `fill`.
+        r
+            r coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the radial
+            coordinatesfor legacy polar chart only.
+        rsrc
+            Sets the source reference on Chart Studio Cloud for  r
+            .
+        selected
+            :class:`plotly.graph_objects.scatter.Selected` instance
+            or dict with compatible properties
+        selectedpoints
+            Array containing integer indices of selected points.
+            Has an effect only for traces that support selections.
+            Note that an empty array means an empty selection where
+            the `unselected` are turned on for all points, whereas,
+            any other non-array values means no selection all where
+            the `selected` and `unselected` styles have no effect.
+        showlegend
+            Determines whether or not an item corresponding to this
+            trace is shown in the legend.
+        stackgaps
+            Only relevant when `stackgroup` is used, and only the
+            first `stackgaps` found in the `stackgroup` will be
+            used - including if `visible` is "legendonly" but not
+            if it is `false`. Determines how we handle locations at
+            which other traces in this group have data but this one
+            does not. With *infer zero* we insert a zero at these
+            locations. With "interpolate" we linearly interpolate
+            between existing values, and extrapolate a constant
+            beyond the existing values.
+        stackgroup
+            Set several scatter traces (on the same subplot) to the
+            same stackgroup in order to add their y values (or
+            their x values if `orientation` is "h"). If blank or
+            omitted this trace will not be stacked. Stacking also
+            turns `fill` on by default, using "tonexty" ("tonextx")
+            if `orientation` is "h" ("v") and sets the default
+            `mode` to "lines" irrespective of point count. You can
+            only stack on a numeric (linear or log) axis. Traces in
+            a `stackgroup` will only fill to (or be filled to)
+            other traces in the same group. With multiple
+            `stackgroup`s or some traces stacked and some not, if
+            fill-linked traces are not already consecutive, the
+            later ones will be pushed down in the drawing order.
+        stream
+            :class:`plotly.graph_objects.scatter.Stream` instance
+            or dict with compatible properties
+        t
+            t coordinates in scatter traces are deprecated!Please
+            switch to the "scatterpolar" trace type.Sets the
+            angular coordinatesfor legacy polar chart only.
+        text
+            Sets text elements associated with each (x,y) pair. If
+            a single string, the same string appears over all the
+            data points. If an array of string, the items are
+            mapped in order to the this trace's (x,y) coordinates.
+            If trace `hoverinfo` contains a "text" flag and
+            "hovertext" is not set, these elements will be seen in
+            the hover labels.
+        textfont
+            Sets the text font.
+        textposition
+            Sets the positions of the `text` elements with respects
+            to the (x,y) coordinates.
+        textpositionsrc
+            Sets the source reference on Chart Studio Cloud for
+            textposition .
+        textsrc
+            Sets the source reference on Chart Studio Cloud for
+            text .
+        texttemplate
+            Template string used for rendering the information text
+            that appear on points. Note that this will override
+            `textinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}". https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Formatting.md#d3_format for
+            details on the formatting syntax. Dates are formatted
+            using d3-time-format's syntax %{variable|d3-time-
+            format}, for example "Day: %{2019-01-01|%A}".
+            https://github.com/d3/d3-3.x-api-
+            reference/blob/master/Time-Formatting.md#format for
+            details on the date formatting syntax. Every attributes
+            that can be specified per-point (the ones that are
+            `arrayOk: true`) are available.
+        texttemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            texttemplate .
+        tsrc
+            Sets the source reference on Chart Studio Cloud for  t
+            .
+        uid
+            Assign an id to this trace, Use this to provide object
+            constancy between traces during animations and
+            transitions.
+        uirevision
+            Controls persistence of some user-driven changes to the
+            trace: `constraintrange` in `parcoords` traces, as well
+            as some `editable: true` modifications such as `name`
+            and `colorbar.title`. Defaults to `layout.uirevision`.
+            Note that other user-driven trace attribute changes are
+            controlled by `layout` attributes: `trace.visible` is
+            controlled by `layout.legend.uirevision`,
+            `selectedpoints` is controlled by
+            `layout.selectionrevision`, and `colorbar.(x|y)`
+            (accessible with `config: {editable: true}`) is
+            controlled by `layout.editrevision`. Trace changes are
+            tracked by `uid`, which only falls back on trace index
+            if no `uid` is provided. So if your app can add/remove
+            traces before the end of the `data` array, such that
+            the same trace has a different index, you can still
+            preserve user-driven changes if you give each trace a
+            `uid` that stays with it as it moves.
+        unselected
+            :class:`plotly.graph_objects.scatter.Unselected`
+            instance or dict with compatible properties
+        visible
+            Determines whether or not this trace is visible. If
+            "legendonly", the trace is not drawn, but can appear as
+            a legend item (provided that the legend itself is
+            visible).
+        x
+            Sets the x coordinates.
+        x0
+            Alternate to `x`. Builds a linear space of x
+            coordinates. Use with `dx` where `x0` is the starting
+            coordinate and `dx` the step.
+        xaxis
+            Sets a reference between this trace's x coordinates and
+            a 2D cartesian x axis. If "x" (the default value), the
+            x coordinates refer to `layout.xaxis`. If "x2", the x
+            coordinates refer to `layout.xaxis2`, and so on.
+        xcalendar
+            Sets the calendar system to use with `x` date data.
+        xsrc
+            Sets the source reference on Chart Studio Cloud for  x
+            .
+        y
+            Sets the y coordinates.
+        y0
+            Alternate to `y`. Builds a linear space of y
+            coordinates. Use with `dy` where `y0` is the starting
+            coordinate and `dy` the step.
+        yaxis
+            Sets a reference between this trace's y coordinates and
+            a 2D cartesian y axis. If "y" (the default value), the
+            y coordinates refer to `layout.yaxis`. If "y2", the y
+            coordinates refer to `layout.yaxis2`, and so on.
+        ycalendar
+            Sets the calendar system to use with `y` date data.
+        ysrc
+            Sets the source reference on Chart Studio Cloud for  y
+            .
+        
+2020-04-14 22:49:05,015 django.server ERROR    "GET / HTTP/1.1" 500 175417
+2020-04-14 22:49:05,015 django.server ERROR    "GET / HTTP/1.1" 500 175417
+2020-04-14 22:49:16,321 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:49:16,321 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:52:19,458 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:52:19,458 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:53:47,791 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:53:47,791 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:54:23,119 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:54:23,119 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:54:46,897 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:54:46,897 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:55:20,877 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:55:20,877 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-14 22:55:45,075 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 22:55:45,075 django.request WARNING  Not Found: /favicon.ico
+2020-04-14 22:55:45,077 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-14 22:55:45,077 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 07:29:10,493 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: app_shot_data.SHOT_DISTANCE
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 8, in home
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 224, in main
+    df = format_to_df(raw_data)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 14, in format_to_df
+    df = pd.DataFrame(list(raw_data.values()), columns=[
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\query.py", line 276, in __iter__
+    self._fetch_all()
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\query.py", line 115, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\sql\compiler.py", line 1103, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\sql\compiler.py", line 1151, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: app_shot_data.SHOT_DISTANCE
+2020-04-15 07:29:10,493 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: app_shot_data.SHOT_DISTANCE
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 8, in home
+    x, y = Return_Data_and_Charts.main('2544', '2010-11')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 224, in main
+    df = format_to_df(raw_data)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 14, in format_to_df
+    df = pd.DataFrame(list(raw_data.values()), columns=[
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\query.py", line 276, in __iter__
+    self._fetch_all()
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\query.py", line 115, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\sql\compiler.py", line 1103, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\models\sql\compiler.py", line 1151, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: app_shot_data.SHOT_DISTANCE
+2020-04-15 07:29:10,501 django.server ERROR    "GET / HTTP/1.1" 500 149866
+2020-04-15 07:29:10,501 django.server ERROR    "GET / HTTP/1.1" 500 149866
+2020-04-15 07:29:11,066 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 07:29:11,066 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 07:29:11,068 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 07:29:11,068 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 07:29:26,060 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 07:29:26,060 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 09:48:59,314 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 09:48:59,314 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 09:49:19,036 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 09:49:19,036 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:12:55,035 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:12:55,035 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:12:55,654 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 11:12:55,654 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 11:12:55,655 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 11:12:55,655 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 11:43:29,112 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:43:29,112 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:46:01,420 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 226, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 200, in final_fig_gen
+    text=f'From {df.SHOT_DISTANCE} ft., missed.',
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\generic.py", line 5274, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'SHOT_DISTANCE'
+2020-04-15 11:46:01,420 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 226, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 200, in final_fig_gen
+    text=f'From {df.SHOT_DISTANCE} ft., missed.',
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\generic.py", line 5274, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'SHOT_DISTANCE'
+2020-04-15 11:46:01,427 django.server ERROR    "GET / HTTP/1.1" 500 97634
+2020-04-15 11:46:01,427 django.server ERROR    "GET / HTTP/1.1" 500 97634
+2020-04-15 11:47:26,987 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'SHOT_MADE_FLAG'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 227, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 191, in final_fig_gen
+    missed_x = df[df['SHOT_MADE_FLAG'] == 0]['LOC_X']
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\frame.py", line 2800, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'SHOT_MADE_FLAG'
+2020-04-15 11:47:26,987 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\indexes\base.py", line 2646, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'SHOT_MADE_FLAG'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 227, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 191, in final_fig_gen
+    missed_x = df[df['SHOT_MADE_FLAG'] == 0]['LOC_X']
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\frame.py", line 2800, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\indexes\base.py", line 2648, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 111, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1619, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1627, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'SHOT_MADE_FLAG'
+2020-04-15 11:47:26,996 django.server ERROR    "GET / HTTP/1.1" 500 209248
+2020-04-15 11:47:26,996 django.server ERROR    "GET / HTTP/1.1" 500 209248
+2020-04-15 11:52:42,019 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:52:42,019 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:53:35,903 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:53:35,903 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:54:41,114 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:54:41,114 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:55:40,568 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:55:40,568 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:57:55,574 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 233, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 211, in final_fig_gen
+    for i in range(len(made_y))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 211, in <listcomp>
+    for i in range(len(made_y))
+TypeError: can only concatenate str (not "numpy.int64") to str
+2020-04-15 11:57:55,574 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 233, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 211, in final_fig_gen
+    for i in range(len(made_y))
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 211, in <listcomp>
+    for i in range(len(made_y))
+TypeError: can only concatenate str (not "numpy.int64") to str
+2020-04-15 11:57:55,576 django.server ERROR    "GET / HTTP/1.1" 500 99146
+2020-04-15 11:57:55,576 django.server ERROR    "GET / HTTP/1.1" 500 99146
+2020-04-15 11:58:44,123 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:58:44,123 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:59:35,219 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 11:59:35,219 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 12:14:19,363 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 12:14:19,363 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
