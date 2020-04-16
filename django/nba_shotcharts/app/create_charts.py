@@ -21,11 +21,10 @@ def format_to_df(raw_data):
         'SHOT_MADE_FLAG',
         'SEASON'])
     df.drop(df.columns[[0,7]], axis=1, inplace=True)
-    print(df)
     df.to_csv('out.csv', index=False) 
     return df
 
-def draw_plotly_court(fig, fig_width=700, margins=10):
+def draw_plotly_court(fig, fig_width=600, margins=10):
         
     # From: https://community.plot.ly/t/arc-shape-with-path/7205/5
     def ellipse_arc(x_center=0.0, y_center=0.0, a=10.5, b=10.5, start_angle=0.0, end_angle=2 * np.pi, N=200, closed=False):
@@ -114,8 +113,8 @@ def draw_plotly_court(fig, fig_width=700, margins=10):
                 line=dict(color="#ec7607", width=2),
             ),
             dict(
-                type="line", x0=-30, y0=-12.5, x1=30, y1=-12.5,
-                line=dict(color="#ec7607", width=2),
+                type="line", x0=-35, y0=-12.5, x1=35, y1=-12.5,
+                line=dict(color="black", width=2),
             ),
 
             dict(type="path",
@@ -190,34 +189,35 @@ def final_fig_gen(df):
     fig = go.Figure()
     draw_plotly_court(fig)
 
-    missed_x = df[df['SHOT_MADE_FLAG'] == 0]['LOC_X']
-    missed_y = df[df['SHOT_MADE_FLAG'] == 0]['LOC_Y']
-
-    missed = go.Scatter(x=missed_x, y=missed_y,
-                        mode='markers', name='Missed',
-                        opacity=0.6, marker_color='orange',
-                        marker=dict(
-                            size=10,
-                            line=dict(width=2, color='#333333'), 
-                            symbol='hexagon'),
-                            text='',
-                        )      
-    fig.add_trace(missed)
-
     made_x = df[df['SHOT_MADE_FLAG'] == 1]['LOC_X']
     made_y = df[df['SHOT_MADE_FLAG'] == 1]['LOC_Y']
 
     made = go.Scatter(x=made_x, y=made_y,
                         mode='markers', name='Made',
-                        opacity=0.6, marker_color='lightblue',
+                        opacity=0.7, marker_color='#6395E5',
                         marker=dict(
                             size=10,
-                            line=dict(width=2, color='#333333'), 
+                            line=dict(width=2, color='black'), 
                             symbol='hexagon'),
                             text='',
-                            hoverinfo=None
+                            hoverinfo=None #'text'
                         )      
     fig.add_trace(made)
+
+    missed_x = df[df['SHOT_MADE_FLAG'] == 0]['LOC_X']
+    missed_y = df[df['SHOT_MADE_FLAG'] == 0]['LOC_Y']
+
+    missed = go.Scatter(x=missed_x, y=missed_y,
+                        mode='markers', name='Missed',
+                        opacity=0.7, marker_color='#C8B51B',
+                        marker=dict(
+                            size=10,
+                            line=dict(width=2, color='black'), 
+                            symbol='hexagon'),
+                            text='',
+                            hoverinfo=None #'text'
+                        )      
+    fig.add_trace(missed)
 
     plt_div = plot(fig, output_type='div', include_plotlyjs=False, link_text="", config=dict(displayModeBar=False))
     return plt_div
@@ -229,4 +229,17 @@ class Return_Data_and_Charts():
         return player, final_fig_gen(df)
         
 
-    
+
+# low paint [width(x) -80 to +80, height(y) is +60 to -52.5]
+# high paint [width(x)  -80 to +80, height(y) is +140 to  +60]
+# straight mid range [width(x) -80 to +80, height(y) is +230 to  +140]
+# straight threes [width(x) -80 to +80, height(y) is +417 to  +230]
+# L wing mid range [width(x) -250 to -80, height(y) is +225 to  +50]
+# R wing mid range [width(x) +250 to +80, height(y) is +225 to  +50]
+# L wing threes [width(x) -250 to -80, height(y) is +417 to  +175]
+# R wing threes [width(x) +250 to +80, height(y) is +417 to  +175]
+# L baseline mid range [width(x) -210 to -80, height(y) is +50 to  -52.5]
+# R baseline mid range [width(x) 210 to 80, height(y) is +50 to  -52.5]
+# L corner threes [width(x) -250 to -210, height(y) is +50 to  -52.5]
+# R corner threes [width(x) 250 to 210, height(y) is +50 to  -52.5]
+

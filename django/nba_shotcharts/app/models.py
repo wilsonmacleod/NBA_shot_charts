@@ -39,3 +39,11 @@ class Shot_data(models.Model):
     SHOT_ATTEMPTED_FLAG = models.IntegerField()
     SHOT_MADE_FLAG = models.IntegerField()
     SEASON = models.ForeignKey(Season, on_delete=models.CASCADE, max_length=25)
+
+#class Processed_Shot_data(models.Model):
+    #PLAYER_ID = models.CharField(max_length=25)
+    #LOC_X = models.IntegerField()
+    #LOC_Y = models.IntegerField()
+    #SHOTS_PER_HEX = models.IntegerField()
+    #FREG_PER_HEX = models.IntegerField()
+    #ACC_PER_HEX = models.IntegerField()

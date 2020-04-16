@@ -6037,3 +6037,839 @@ TypeError: can only concatenate str (not "numpy.int64") to str
 2020-04-15 12:14:19,295 django.server INFO     "GET / HTTP/1.1" 200 46153
 2020-04-15 12:14:19,363 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
 2020-04-15 12:14:19,363 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:16:40,642 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:16:40,642 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:16:59,098 django.server INFO     "GET / HTTP/1.1" 200 46153
+2020-04-15 13:16:59,098 django.server INFO     "GET / HTTP/1.1" 200 46153
+2020-04-15 13:16:59,180 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:16:59,180 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:17:45,625 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:17:45,625 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:17:46,688 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:17:46,688 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:17:50,860 django.server INFO     "GET / HTTP/1.1" 200 59075
+2020-04-15 13:17:50,860 django.server INFO     "GET / HTTP/1.1" 200 59075
+2020-04-15 13:17:50,907 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:17:50,907 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:22:08,927 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:22:08,927 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:22:10,214 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:22:10,214 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:22:12,839 django.server INFO     "GET / HTTP/1.1" 200 59117
+2020-04-15 13:22:12,839 django.server INFO     "GET / HTTP/1.1" 200 59117
+2020-04-15 13:22:12,888 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:22:12,888 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:22:37,266 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:22:37,266 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:22:38,438 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:22:38,438 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:22:56,629 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:22:56,629 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:23:11,296 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:23:11,296 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:23:12,242 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:23:12,242 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:23:14,955 django.server INFO     "GET / HTTP/1.1" 200 46571
+2020-04-15 13:23:14,955 django.server INFO     "GET / HTTP/1.1" 200 46571
+2020-04-15 13:23:15,028 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:23:15,028 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:23:45,931 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:23:45,931 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:23:46,921 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:23:46,921 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:23:49,850 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 230, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 203, in final_fig_gen
+    text=text + 'ft. away',
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:23:49,850 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 230, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 203, in final_fig_gen
+    text=text + 'ft. away',
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:23:49,853 django.server ERROR    "GET / HTTP/1.1" 500 128814
+2020-04-15 13:23:49,853 django.server ERROR    "GET / HTTP/1.1" 500 128814
+2020-04-15 13:23:56,791 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 230, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 203, in final_fig_gen
+    text=text + 'ft. away',
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:23:56,791 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 230, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 203, in final_fig_gen
+    text=text + 'ft. away',
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:23:56,793 django.server ERROR    "GET / HTTP/1.1" 500 128814
+2020-04-15 13:23:56,793 django.server ERROR    "GET / HTTP/1.1" 500 128814
+2020-04-15 13:24:10,338 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:24:10,338 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:24:11,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:24:11,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:24:14,066 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:24:14,066 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:24:14,820 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:24:14,820 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:26:25,685 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:26:25,685 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:26:28,162 django.server INFO     "GET / HTTP/1.1" 200 46195
+2020-04-15 13:26:28,162 django.server INFO     "GET / HTTP/1.1" 200 46195
+2020-04-15 13:26:28,239 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:26:28,239 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:26:55,911 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:26:55,911 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:26:57,046 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:26:57,046 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:26:59,608 django.server INFO     "GET / HTTP/1.1" 200 46191
+2020-04-15 13:26:59,608 django.server INFO     "GET / HTTP/1.1" 200 46191
+2020-04-15 13:26:59,676 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:26:59,676 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:27:10,045 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:27:10,045 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:27:11,192 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:27:11,192 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:27:13,750 django.server INFO     "GET / HTTP/1.1" 200 46155
+2020-04-15 13:27:13,750 django.server INFO     "GET / HTTP/1.1" 200 46155
+2020-04-15 13:27:13,803 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:27:13,803 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:27:24,346 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:27:24,346 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:27:25,419 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:27:25,419 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:28:02,422 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:28:02,422 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:28:03,786 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:28:03,786 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:28:48,893 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:28:48,893 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:28:49,769 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:28:49,769 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:29:39,307 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:29:39,307 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:29:40,530 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:29:40,530 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:29:43,085 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:29:43,085 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:29:43,132 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:29:43,132 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:30:32,786 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:30:32,786 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:30:33,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:30:33,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:30:36,165 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:30:36,165 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:30:36,211 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:30:36,211 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:30:48,218 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:30:48,218 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:30:49,236 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:30:49,236 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:30:52,235 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:30:52,235 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:30:52,275 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:30:52,275 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:31:25,192 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:31:25,192 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:31:26,148 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:31:26,148 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:31:51,276 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:31:51,276 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:31:52,410 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:31:52,410 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:31:54,665 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 230, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 218, in final_fig_gen
+    text=['Missed from' + text],
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:31:54,665 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 230, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 218, in final_fig_gen
+    text=['Missed from' + text],
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:31:54,669 django.server ERROR    "GET / HTTP/1.1" 500 137219
+2020-04-15 13:31:54,669 django.server ERROR    "GET / HTTP/1.1" 500 137219
+2020-04-15 13:33:05,532 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:33:05,532 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:33:06,761 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:33:06,761 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:33:10,053 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = 'Made from: ' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:33:10,053 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = 'Made from: ' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:33:10,060 django.server ERROR    "GET / HTTP/1.1" 500 135322
+2020-04-15 13:33:10,060 django.server ERROR    "GET / HTTP/1.1" 500 135322
+2020-04-15 13:33:31,854 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = 'Made from: ' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:33:31,854 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = 'Made from: ' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:33:31,857 django.server ERROR    "GET / HTTP/1.1" 500 135322
+2020-04-15 13:33:31,857 django.server ERROR    "GET / HTTP/1.1" 500 135322
+2020-04-15 13:33:58,986 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:33:58,986 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:34:00,388 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:34:00,388 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:34:03,047 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = 'Made from: ' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:34:03,047 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = 'Made from: ' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:34:03,052 django.server ERROR    "GET / HTTP/1.1" 500 135322
+2020-04-15 13:34:03,052 django.server ERROR    "GET / HTTP/1.1" 500 135322
+2020-04-15 13:34:13,013 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:34:13,013 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:34:14,092 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:34:14,092 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:34:17,090 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = '<i>Made from: </i>' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:34:17,090 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 149, in na_arithmetic_op
+    result = expressions.evaluate(op, str_rep, left, right)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 208, in evaluate
+    return _evaluate(op, op_str, a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 231, in main
+    return player, final_fig_gen(df)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 194, in final_fig_gen
+    text = '<i>Made from: </i>' + df.SHOT_DISTANCE + 'ft.'
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\common.py", line 64, in new_method
+    return method(self, other)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\__init__.py", line 503, in wrapper
+    result = arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 197, in arithmetic_op
+    res_values = na_arithmetic_op(lvalues, rvalues, op, str_rep)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 151, in na_arithmetic_op
+    result = masked_arith_op(left, right, op)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\array_ops.py", line 112, in masked_arith_op
+    result[mask] = op(xrav[mask], y)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\pandas\core\ops\roperator.py", line 9, in radd
+    return right + left
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U21'), dtype('<U21')) -> dtype('<U21')
+2020-04-15 13:34:17,095 django.server ERROR    "GET / HTTP/1.1" 500 135588
+2020-04-15 13:34:17,095 django.server ERROR    "GET / HTTP/1.1" 500 135588
+2020-04-15 13:34:36,191 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:34:36,191 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 13:34:37,505 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:34:37,505 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:34:40,220 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:34:40,220 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 13:34:40,272 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:34:40,272 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 13:38:19,093 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-15 13:38:19,093 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\models.py changed, reloading.
+2020-04-15 13:38:20,235 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:38:20,235 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:37:36,940 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:37:36,940 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:37:40,876 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 259, in main
+    df = format_to_df(raw_data)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 25, in format_to_df
+    f = matplotlib.pyplot.hexbin(df.LOC_X, df.LOC_Y, gridsize=51)
+NameError: name 'matplotlib' is not defined
+2020-04-15 21:37:40,876 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\env-django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\views.py", line 7, in home
+    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 259, in main
+    df = format_to_df(raw_data)
+  File "C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py", line 25, in format_to_df
+    f = matplotlib.pyplot.hexbin(df.LOC_X, df.LOC_Y, gridsize=51)
+NameError: name 'matplotlib' is not defined
+2020-04-15 21:37:40,878 django.server ERROR    "GET / HTTP/1.1" 500 86471
+2020-04-15 21:37:40,878 django.server ERROR    "GET / HTTP/1.1" 500 86471
+2020-04-15 21:37:41,318 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 21:37:41,318 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 21:37:41,320 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 21:37:41,320 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2093
+2020-04-15 21:38:10,165 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:38:10,165 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:38:11,190 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:38:11,190 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:38:47,765 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:38:47,765 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:38:51,783 django.server INFO     "GET / HTTP/1.1" 200 168105
+2020-04-15 21:38:51,783 django.server INFO     "GET / HTTP/1.1" 200 168105
+2020-04-15 21:38:51,856 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:38:51,856 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:39:17,170 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:39:17,170 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:39:19,532 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:39:19,532 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:39:23,261 django.server INFO     "GET / HTTP/1.1" 200 183315
+2020-04-15 21:39:23,261 django.server INFO     "GET / HTTP/1.1" 200 183315
+2020-04-15 21:39:23,332 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:39:23,332 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:40:17,554 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:40:17,554 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:40:19,799 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:40:19,799 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:40:22,370 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 21:40:22,370 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 21:40:22,424 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:40:22,424 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:50:54,271 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:50:54,271 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:50:55,271 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:50:55,271 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:50:59,259 django.server INFO     "GET / HTTP/1.1" 200 46191
+2020-04-15 21:50:59,259 django.server INFO     "GET / HTTP/1.1" 200 46191
+2020-04-15 21:50:59,315 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:50:59,315 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:51:09,967 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:51:09,967 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 21:51:11,208 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:51:11,208 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 21:51:13,761 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 21:51:13,761 django.server INFO     "GET / HTTP/1.1" 200 46190
+2020-04-15 21:51:13,805 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 21:51:13,805 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:10:39,801 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:10:39,801 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:10:40,977 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:10:40,977 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:10:43,343 django.server INFO     "GET / HTTP/1.1" 200 46184
+2020-04-15 22:10:43,343 django.server INFO     "GET / HTTP/1.1" 200 46184
+2020-04-15 22:10:43,398 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:10:43,398 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:11:01,492 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:11:01,492 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:11:02,669 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:11:02,669 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:11:05,131 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:11:05,131 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:11:05,190 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:11:05,190 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:11:30,312 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:11:30,312 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:11:31,461 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:11:31,461 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:11:34,046 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:11:34,046 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:11:34,089 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:11:34,089 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:11:46,369 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:11:46,369 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:11:47,492 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:11:47,492 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:11:50,228 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:11:50,228 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:11:50,281 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:11:50,281 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:12:08,376 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:12:08,376 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:12:09,449 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:12:09,449 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:12:12,069 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:12:12,069 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:12:12,115 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:12:12,115 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:12:39,298 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:12:39,298 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:12:40,644 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:12:40,644 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:12:49,070 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:12:49,070 django.server INFO     "GET / HTTP/1.1" 200 46188
+2020-04-15 22:12:49,120 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:12:49,120 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:26:30,797 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:26:30,797 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 22:26:32,269 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:26:32,269 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 22:26:34,821 django.server INFO     "GET / HTTP/1.1" 200 46146
+2020-04-15 22:26:34,821 django.server INFO     "GET / HTTP/1.1" 200 46146
+2020-04-15 22:26:34,870 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 22:26:34,870 django.server WARNING  "GET /static/blog/main.css HTTP/1.1" 404 1665
+2020-04-15 23:12:51,664 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 23:12:51,664 django.utils.autoreload INFO     C:\Users\wilso\Desktop\nba_shotcharts\django\nba_shotcharts\app\create_charts.py changed, reloading.
+2020-04-15 23:12:53,219 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 23:12:53,219 django.utils.autoreload INFO     Watching for file changes with StatReloader
