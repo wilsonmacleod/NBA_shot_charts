@@ -24,8 +24,9 @@ def get_shotchart_data(player_id, season):
     column_headers = response['resultSets'][0]['headers']
     shots = response['resultSets'][0]['rowSet']
     shot_df = pd.DataFrame(shots, columns=column_headers)
-    shot_df.drop(shot_df.columns[[0,1,2,4,5,6,7,8,9,10,11,12,13,14,15,21,22,23]], axis=1, inplace=True)
+    shot_df.drop(shot_df.columns[[0,1,2,4,5,6,7,8,9,10,11,12,13,14,15, 16, 21,22,23]], axis=1, inplace=True)
     shot_df['SEASON'] = season
+    shot_df.to_csv('shotdetail', sep='\t', encoding='utf-8')
     return shot_df
 
 def parse_player_ids(season):

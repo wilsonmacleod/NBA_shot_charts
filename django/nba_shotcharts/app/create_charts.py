@@ -21,7 +21,6 @@ def format_to_df(raw_data):
         'SHOT_MADE_FLAG',
         'SEASON'])
     df.drop(df.columns[[0,7]], axis=1, inplace=True)
-    df.to_csv('out.csv', index=False) 
     return df
 
 def draw_plotly_court(fig, fig_width=600, margins=10):
@@ -189,33 +188,45 @@ def final_fig_gen(df):
     fig = go.Figure()
     draw_plotly_court(fig)
 
-    made_x = df[df['SHOT_MADE_FLAG'] == 1]['LOC_X']
-    made_y = df[df['SHOT_MADE_FLAG'] == 1]['LOC_Y']
+    #made_x = df[df['SHOT_MADE_FLAG'] == 1]['LOC_X']
+    #made_y = df[df['SHOT_MADE_FLAG'] == 1]['LOC_Y']
 
-    made = go.Scatter(x=made_x, y=made_y,
-                        mode='markers', name='Made',
-                        opacity=0.7, marker_color='#6395E5',
-                        marker=dict(
-                            size=10,
-                            line=dict(width=2, color='black'), 
-                            symbol='hexagon'),
-                            text='',
-                            hoverinfo=None #'text'
-                        )      
-    fig.add_trace(made)
+    #made = go.Scatter(x=made_x, y=made_y,
+    #                    mode='markers', name='Made',
+    #                    opacity=0.7, marker_color='#6395E5',
+    #                    marker=dict(
+    #                        size=10,
+    #                        line=dict(width=2, color='black'), 
+    #                        symbol='hexagon'),
+    #                        text='',
+    #                        hoverinfo=None #'text'
+    #                    )      
+    #fig.add_trace(made)
 
-    missed_x = df[df['SHOT_MADE_FLAG'] == 0]['LOC_X']
-    missed_y = df[df['SHOT_MADE_FLAG'] == 0]['LOC_Y']
+    missed_x = df['LOC_X']
+    missed_y = df['LOC_Y']
+    #accuracy = df['ACCURACY_FROM_ZONE'] * 10
+    #text =  [
+    #    '<i></i>' + str(df['ZONE_NAME'][i]) + ' <BR>'
+    #    '<i>Distance: </i>' + str(df['SHOT_DISTANCE'][i]) + ' ft.<BR>'
+    #    '<i>Accuracy From Zone: </i>' + str(round(df['ACCURACY_FROM_ZONE'][i]*100, 1)) + '%<BR>'
+    #    for i in range(len(df['ACCURACY_FROM_ZONE']))
+    #]
 
+    colorscale = 'RdYlBu_r'
     missed = go.Scatter(x=missed_x, y=missed_y,
                         mode='markers', name='Missed',
-                        opacity=0.7, marker_color='#C8B51B',
+                        opacity=0.7,
                         marker=dict(
                             size=10,
-                            line=dict(width=2, color='black'), 
+                            color=df['SHOT_MADE_FLAG'],
+                            colorscale='RdYlBu_r',
+                            line=dict(width=2, 
+                            color='black'
+                            ), 
                             symbol='hexagon'),
-                            text='',
-                            hoverinfo=None #'text'
+                            text=text,
+                            hoverinfo='text' #'text'
                         )      
     fig.add_trace(missed)
 
@@ -225,21 +236,8 @@ def final_fig_gen(df):
 class Return_Data_and_Charts():
     def main(player_id, season):
         player, raw_data = pull_from_db(player_id, season)
-        df = format_to_df(raw_data)
-        return player, final_fig_gen(df)
+        raw_df = format_to_df(raw_data)
+        zone_df = zone_sort(raw_df)
+        fin_df = clean_df_per_hex(raw_df, zone_df)
+        return player, final_fig_gen(fin_df)
         
-
-
-# low paint [width(x) -80 to +80, height(y) is +60 to -52.5]
-# high paint [width(x)  -80 to +80, height(y) is +140 to  +60]
-# straight mid range [width(x) -80 to +80, height(y) is +230 to  +140]
-# straight threes [width(x) -80 to +80, height(y) is +417 to  +230]
-# L wing mid range [width(x) -250 to -80, height(y) is +225 to  +50]
-# R wing mid range [width(x) +250 to +80, height(y) is +225 to  +50]
-# L wing threes [width(x) -250 to -80, height(y) is +417 to  +175]
-# R wing threes [width(x) +250 to +80, height(y) is +417 to  +175]
-# L baseline mid range [width(x) -210 to -80, height(y) is +50 to  -52.5]
-# R baseline mid range [width(x) 210 to 80, height(y) is +50 to  -52.5]
-# L corner threes [width(x) -250 to -210, height(y) is +50 to  -52.5]
-# R corner threes [width(x) 250 to 210, height(y) is +50 to  -52.5]
-

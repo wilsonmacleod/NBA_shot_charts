@@ -33,17 +33,11 @@ class Shot_data(models.Model):
 #           "SEASON": "", FOREIGNKEY
 #         }
     PLAYER_ID = models.CharField(max_length=25)
-    SHOT_DISTANCE=models.IntegerField()
+    SHOT_DISTANCE = models.IntegerField()
     LOC_X = models.IntegerField()
     LOC_Y = models.IntegerField()
     SHOT_ATTEMPTED_FLAG = models.IntegerField()
     SHOT_MADE_FLAG = models.IntegerField()
+    #ZONE_NAME = models.CharField(max_length=25)
+    #ACCURACY_FROM_ZONE = models.IntegerField()
     SEASON = models.ForeignKey(Season, on_delete=models.CASCADE, max_length=25)
-
-#class Processed_Shot_data(models.Model):
-    #PLAYER_ID = models.CharField(max_length=25)
-    #LOC_X = models.IntegerField()
-    #LOC_Y = models.IntegerField()
-    #SHOTS_PER_HEX = models.IntegerField()
-    #FREG_PER_HEX = models.IntegerField()
-    #ACC_PER_HEX = models.IntegerField()
