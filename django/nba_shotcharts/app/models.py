@@ -41,5 +41,5 @@ class Shot_data(models.Model):
     SHOT_ATTEMPTED_FLAG = models.IntegerField()
     SHOT_MADE_FLAG = models.IntegerField()
     ZONE_NAME = models.CharField(max_length=50)
-    ACCURACY_FROM_ZONE = models.IntegerField()
+    ACCURACY_FROM_ZONE = models.FloatField()
     SEASON = models.ForeignKey(Season, on_delete=models.CASCADE, max_length=25)

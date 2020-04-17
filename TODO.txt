@@ -1,19 +1,22 @@
 ###
 
-Datastuctures
-    -shot data per player per season
-    -player id, name, team, age
+//Datastuctures
+//    -shot data per player per season
+//    -player id, name, team, age
 
 django
     //-models
     //-fixtures
-    -figure creating classes
-        -more data
-            -length
-        -frequency
-        -made
-        -missed
-        -all
+    //-figure creating classes
+    //    -more data
+    //        -length
+    //    -frequency
+    //    -made
+    //    -missed
+    //    -all
+    -fix zones
+        -include total makes per zone?
+    -re process and upload data
     -views
     -forms
     -templates

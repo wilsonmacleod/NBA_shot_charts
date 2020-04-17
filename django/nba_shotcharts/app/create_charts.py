@@ -11,16 +11,22 @@ def pull_from_db(player_id, season):
     return player, raw_data
 
 def format_to_df(raw_data):
-    df = pd.DataFrame(list(raw_data.values()), columns=[
-        'django_id', 
-        'PLAYER_ID', 
-        'SHOT_DISTANCE',
-        'LOC_X', 
-        'LOC_Y',
-        'SHOT_ATTEMPTED_FLAG',
-        'SHOT_MADE_FLAG',
-        'SEASON'])
-    df.drop(df.columns[[0,7]], axis=1, inplace=True)
+    clean_list = []
+    for u in raw_data:
+        clean_list.append({
+            'django_id': u.id,
+            'PLAYER_ID': u.PLAYER_ID,
+            'SHOT_DISTANCE': u.SHOT_DISTANCE,
+            'LOC_X': u.LOC_X,
+            'LOC_Y': u.LOC_Y,
+            'SHOT_ATTEMPTED_FLAG': u.SHOT_ATTEMPTED_FLAG,
+            'SHOT_MADE_FLAG': u.SHOT_MADE_FLAG,
+            'ZONE_NAME': u.ZONE_NAME,
+            'ACCURACY_FROM_ZONE': float(u.ACCURACY_FROM_ZONE),
+            'SEASON': u.SEASON
+        })
+    df = pd.DataFrame(clean_list)
+    df.drop(df.columns[[0, 9]], axis=1, inplace=True)
     return df
 
 def draw_plotly_court(fig, fig_width=600, margins=10):
@@ -75,25 +81,21 @@ def draw_plotly_court(fig, fig_width=600, margins=10):
             dict(
                 type="rect", x0=-250, y0=-52.5, x1=250, y1=417.5,
                 line=dict(color=main_line_col, width=2),
-                # fillcolor='#333333',
                 layer='below'
             ),
             dict(
                 type="rect", x0=-80, y0=-52.5, x1=80, y1=137.5,
                 line=dict(color=main_line_col, width=2),
-                # fillcolor='#333333',
                 layer='below'
             ),
             dict(
                 type="rect", x0=-60, y0=-52.5, x1=60, y1=137.5,
                 line=dict(color=main_line_col, width=2),
-                # fillcolor='#333333',
                 layer='below'
             ),
             dict(
                 type="circle", x0=-60, y0=77.5, x1=60, y1=197.5, xref="x", yref="y",
                 line=dict(color=main_line_col, width=2),
-                # fillcolor='#dddddd',
                 layer='below'
             ),
             dict(
@@ -184,60 +186,70 @@ def draw_plotly_court(fig, fig_width=600, margins=10):
     )
 
 def final_fig_gen(df):
-    
     fig = go.Figure()
     draw_plotly_court(fig)
 
-    #made_x = df[df['SHOT_MADE_FLAG'] == 1]['LOC_X']
-    #made_y = df[df['SHOT_MADE_FLAG'] == 1]['LOC_Y']
+    x = df['LOC_X']
+    y = df['LOC_Y']
+    accuracy = df['ACCURACY_FROM_ZONE'] * 10
+    #result_marker = "Hexagon" if df['SHOT_MADE_FLAG'] == 1 else "Circle"
+    
+    marker_cmin = 2
+    marker_cmax = 5.5
+    ticktexts = ["Worst", "Average", "Best"]
 
-    #made = go.Scatter(x=made_x, y=made_y,
-    #                    mode='markers', name='Made',
-    #                    opacity=0.7, marker_color='#6395E5',
-    #                    marker=dict(
-    #                        size=10,
-    #                        line=dict(width=2, color='black'), 
-    #                        symbol='hexagon'),
-    #                        text='',
-    #                        hoverinfo=None #'text'
-    #                    )      
-    #fig.add_trace(made)
-
-    missed_x = df['LOC_X']
-    missed_y = df['LOC_Y']
-    #accuracy = df['ACCURACY_FROM_ZONE'] * 10
-    #text =  [
-    #    '<i></i>' + str(df['ZONE_NAME'][i]) + ' <BR>'
-    #    '<i>Distance: </i>' + str(df['SHOT_DISTANCE'][i]) + ' ft.<BR>'
-    #    '<i>Accuracy From Zone: </i>' + str(round(df['ACCURACY_FROM_ZONE'][i]*100, 1)) + '%<BR>'
-    #    for i in range(len(df['ACCURACY_FROM_ZONE']))
-    #]
+    marker_text =  [
+        f'{str("Made" if df.SHOT_MADE_FLAG[i] == 1 else "Missed")} <BR>'
+        f'<i>Distance: </i> {str(df.SHOT_DISTANCE[i])} ft.<BR>'
+        f'<b>{str(df.ZONE_NAME[i])}</b><BR>'
+        f'<i>Accuracy From Zone: </i> {str(round(df.ACCURACY_FROM_ZONE[i]*100, 1))}%<BR>'
+        for i in range(len(df.ACCURACY_FROM_ZONE))
+    ]
 
     colorscale = 'RdYlBu_r'
-    missed = go.Scatter(x=missed_x, y=missed_y,
+    scat = go.Scatter(x=x, y=y,
                         mode='markers', name='Missed',
-                        opacity=0.7,
+                        opacity=0.8,
                         marker=dict(
-                            size=10,
-                            color=df['SHOT_MADE_FLAG'],
+                            size=12,
+                            color=accuracy,
                             colorscale='RdYlBu_r',
-                            line=dict(width=2, 
-                            color='black'
+                            colorbar=dict(
+                                    thickness=15,
+                                    x=0.84,
+                                    y=0.80,
+                                    yanchor='middle',
+                                    len=0.3,
+                                    title=dict(
+                                        text="<B>Accuracy</B>",
+                                        font=dict(
+                                            size=11,
+                                            color='#4d4d4d'
+                                        ),
+                                    ),
+                                    tickvals=[marker_cmin, (marker_cmin + marker_cmax) / 2, marker_cmax],
+                                    ticktext=ticktexts,
+                                    tickfont=dict(
+                                        size=11,
+                                        color='black'
+                                    )
+                                ),
+                            line=dict(
+                                width=1.5, 
+                                color='black'
                             ), 
-                            symbol='hexagon'),
-                            text=text,
-                            hoverinfo='text' #'text'
+                            symbol='hexagon'
+                        ),
+                        text=marker_text,
+                        hoverinfo='text' #'text'
                         )      
-    fig.add_trace(missed)
-
+    fig.add_trace(scat)
     plt_div = plot(fig, output_type='div', include_plotlyjs=False, link_text="", config=dict(displayModeBar=False))
     return plt_div
 
 class Return_Data_and_Charts():
     def main(player_id, season):
         player, raw_data = pull_from_db(player_id, season)
-        raw_df = format_to_df(raw_data)
-        zone_df = zone_sort(raw_df)
-        fin_df = clean_df_per_hex(raw_df, zone_df)
-        return player, final_fig_gen(fin_df)
+        df = format_to_df(raw_data)
+        return player, final_fig_gen(df)
         
