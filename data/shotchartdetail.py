@@ -1,7 +1,7 @@
-import os
-from os import path
 import json
 import time
+import os
+from os import path
 
 import requests
 import pandas as pd
@@ -31,7 +31,7 @@ def get_shotchart_data(player_id, season):
 
 def parse_player_ids(season):
     basepath = path.dirname(__file__)
-    finalpath = basepath + f'/data/player_details/{season}.json'
+    finalpath = basepath + f'/json_data/player_details/{season}.json'
     #finalpath = r'C:\Users\wilso\Desktop\nba_shotcharts\crawlers\data\player_details\2010-11.json'
     with open(finalpath, 'r') as f:
         data = json.load(f)
@@ -42,7 +42,7 @@ def parse_player_ids(season):
 
 def main(season):
     basepath = path.dirname(__file__)
-    finalpath = basepath + f'/data/season_shotcharts/{season}/'
+    finalpath = basepath + f'/json_data/season_shotcharts/{season}/'
     for each in tqdm(parse_player_ids(season)):
             shot_df = get_shotchart_data(each, season)
             data = [{'model': 'app.Shot_data', 'fields': {j: row[j] for j in shot_df.columns}} for i, row in shot_df.iterrows()]

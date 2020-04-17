@@ -30,6 +30,8 @@ class Shot_data(models.Model):
 #         "LOC_Y": , str
 #          "SHOT_ATTEMPTED_FLAG": "", str
 #          "SHOT_MADE_FLAG": "", str
+#           "ZONE_NAME": "" str
+#           "ACCURACY_FROM_ZONE": str
 #           "SEASON": "", FOREIGNKEY
 #         }
     PLAYER_ID = models.CharField(max_length=25)
@@ -38,6 +40,6 @@ class Shot_data(models.Model):
     LOC_Y = models.IntegerField()
     SHOT_ATTEMPTED_FLAG = models.IntegerField()
     SHOT_MADE_FLAG = models.IntegerField()
-    #ZONE_NAME = models.CharField(max_length=25)
-    #ACCURACY_FROM_ZONE = models.IntegerField()
+    ZONE_NAME = models.CharField(max_length=50)
+    ACCURACY_FROM_ZONE = models.IntegerField()
     SEASON = models.ForeignKey(Season, on_delete=models.CASCADE, max_length=25)

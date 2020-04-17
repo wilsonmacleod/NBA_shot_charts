@@ -1,7 +1,7 @@
-import os
-from os import path
 import json
 import time
+import os
+from os import path
 
 import requests
 import pandas as pd
@@ -22,7 +22,7 @@ def get(season):
 
 def main(season):
     basepath = path.dirname(__file__)
-    finalpath = basepath + '/data/player_details/'
+    finalpath = basepath + '/json_data/player_details/'
     df = get(season)
     data = [{'model': 'app.Player_id', 'fields': {j: row[j] for j in df.columns}} for i, row in df.iterrows()]
     with open(f'{finalpath}/{season}.json', 'w') as f:

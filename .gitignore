@@ -2,9 +2,10 @@
 __pycache__
 
 #DATA
-env/
-crawlers/data/*
-crawlers/urls.py*
+data/env-data/
+data/json_data/player_details/*
+data/json_data/season_shotcharts/*
+data/urls.py*
 
 #DJANGO
 django/env-django/

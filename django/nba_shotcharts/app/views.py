@@ -4,9 +4,11 @@ from .create_charts import Return_Data_and_Charts
 # Create your views here.
 
 def home(request):
-    x, y = Return_Data_and_Charts.main('2544', '2019-20')
+    Shot_data.objects.all().delete()
+    #x, y = Return_Data_and_Charts.main('2544', '2019-20')
+    x='None'
     context = {
         'x': x,
-        'y': y
+        #'y': y
     }
     return render(request, 'index.html', context)
