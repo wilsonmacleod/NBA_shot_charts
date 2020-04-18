@@ -19,5 +19,6 @@ from app import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', user_views.home, name="home"),
-]
+    path(f'', user_views.base, name="base"),
+    path(f'player_view/<season>', user_views.player_view, name="player_view"),
+    ]

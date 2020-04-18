@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+<section id="slider">
+<div>
+    <form method="GET">
+        {{ player_select }}
+        <input type="submit" value="Submit"> 
+    </form>
+  </div>
+</section>
+
+<section id="services" class="clear">
+    <article class="one_third">
+        {% autoescape off %}
+        <div>{{ chart }}</div>
+    {% endautoescape %}
+    </article>
+    <article class="one_third lastbox">
+      <figure><img src="images/demo/290x180.gif" width="180" height="180" alt="Template Demo Image">
+        <figcaption>
+          <h1>{{ season }} <bold>{{ player_details.PLAYER_NAME }}</bold></h1>
+          <p>Age:<bold> {{ player_details.AGE }}</bold></p>
+          <p>Team:<bold> {{ player_details.TEAM_ABBREVIATION }}</bold></p>
+          <p>Most Attempted Zone: {{ most_att }}</p>
+          <p>Highest accuracy zone: {{ highest_acc }}</p>
+          <p>Avg Shot Distance: {{ avg_dist }}</p>
+        </figcaption>
+      </figure>
+    </article>
+</section>
+
+{% endblock content %}

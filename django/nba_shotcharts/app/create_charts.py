@@ -7,6 +7,7 @@ from .models import Season, Player_id, Shot_data
 
 def pull_from_db(player_id, season):
     player = Player_id.objects.filter(SEASON=season).filter(PLAYER_ID=player_id).first()
+    player.AGE = player.AGE[0:2]
     raw_data = Shot_data.objects.filter(SEASON=season).filter(PLAYER_ID=player_id).all()
     return player, raw_data
 
@@ -192,11 +193,11 @@ def final_fig_gen(df):
 
     x = df['LOC_X']
     y = df['LOC_Y']
-    accuracy = df['ACCURACY_FROM_ZONE'] * 10
+    accuracy = df['ACCURACY_FROM_ZONE'] * 100
     #result_marker = "Hexagon" if df['SHOT_MADE_FLAG'] == 1 else "Circle"
     
-    marker_cmin = 2
-    marker_cmax = 5.5
+    marker_cmin = df['ACCURACY_FROM_ZONE'].min() * 100
+    marker_cmax = df['ACCURACY_FROM_ZONE'].max() * 100
     ticktexts = ["Worst", "Average", "Best"]
 
     marker_text =  [
@@ -248,9 +249,26 @@ def final_fig_gen(df):
     plt_div = plot(fig, output_type='div', include_plotlyjs=False, link_text="", config=dict(displayModeBar=False))
     return plt_div
 
+def df_to_presentation(df):
+    y = 0
+    li = list(df.ZONE_NAME.unique())
+    d = {i: 0 for i in li}
+    for i, r in df.iterrows():
+        x = int(r['TOTALS'].split('/')[1])
+        if x > y:
+            y = x
+            row = r['ZONE_NAME']
+
+    return_obj = {}
+    return_obj['most_attempted_zone'] = f'{row} ({y} FGA.)'
+    return_obj['highest_accuracy_zone'] = f'{df.iloc[df["ACCURACY_FROM_ZONE"].idxmax()]["ZONE_NAME"]} ({round(df["ACCURACY_FROM_ZONE"].max() * 100, 1)}%)'
+    return_obj['average_distance'] = f'{round(df.SHOT_DISTANCE.mean(), 2)} ft.'
+    return return_obj
+
 class Return_Data_and_Charts():
     def main(player_id, season):
         player, raw_data = pull_from_db(player_id, season)
         df = format_to_df(raw_data)
-        return player, final_fig_gen(df)
+        obj = df_to_presentation(df)
+        return player, obj, final_fig_gen(df)
         

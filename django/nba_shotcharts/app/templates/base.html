@@ -1,0 +1,102 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+
+    <!--Plotly-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <title>Django DEV-MODE</title>
+
+</head>
+<body>
+    <div class="wrapper row1">
+      <div><a href="{% url 'base' %}">Home</a></div>
+      <header id="header" class="clear">
+        <nav>
+          <ul>
+              {% for season in  season_choices%}
+                <li><a href="{% url 'player_view' season=season %}">{{season}}</a></li>
+                {% endfor %}
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <!-- content -->
+    <div class="wrapper row2">
+      <div id="container" class="clear">
+        <!-- main content -->
+        <div id="homepage">
+          <!-- ########################################################################################## -->
+          <!-- ########################################################################################## -->
+          <!-- ########################################################################################## -->
+          <!-- ########################################################################################## -->
+          <!-- Introduction -->
+          <section id="intro" class="last clear">
+            <article>
+                {% block content %}{% endblock %}
+            </article>
+          </section>
+          <!-- / Introduction -->
+        </div>
+        <!-- / content body -->
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="wrapper row3">
+      <div id="footer" class="clear">
+        <!-- Section One -->
+        <section class="one_quarter">
+          <h2 class="title">MY SITE</h2>
+          <nav>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit</a></li>
+              <li><a href="#">Amet consectetur</a></li>
+              <li><a href="#">Praesent vel sem id</a></li>
+              <li><a href="#">Curabitur hendrerit est</a></li>
+              <li class="last"><a href="#">Sed a nulla urna</a></li>
+            </ul>
+          </nav>
+        </section>
+        <!-- Section Two -->
+        <section class="one_quarter">
+          <h2 class="title">CONTACT</h2>
+          <nav>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit</a></li>
+              <li><a href="#">Amet consectetur</a></li>
+              <li><a href="#">Praesent vel sem id</a></li>
+              <li><a href="#">Curabitur hendrerit est</a></li>
+              <li class="last"><a href="#">Sed a nulla urna</a></li>
+            </ul>
+          </nav>
+        </section>
+        <!-- Section Three -->
+        <section class="one_quarter">
+          <h2 class="title">GITHUB</h2>
+          <nav>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit</a></li>
+              <li><a href="#">Amet consectetur</a></li>
+              <li><a href="#">Praesent vel sem id</a></li>
+              <li><a href="#">Curabitur hendrerit est</a></li>
+              <li class="last"><a href="#">Sed a nulla urna</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </div>
+    </body>
+</body>
+</html>

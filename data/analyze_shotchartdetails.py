@@ -18,8 +18,8 @@ def zone_sort(df):
     high_paint = {'x_loc': range(-80,81), 'y_loc': range(60, 141), 'name': 'High Paint'} # 1
     straight_mid_range = {'x_loc': range(-80,81), 'y_loc': range(140, 231), 'name': 'Straight-on Mid-range'} # 2
     straight_threes = {'x_loc': range(-80,81), 'y_loc': range(231, 418), 'name': 'Straight-on 3'} # 3
-    r_wing_mid_range = {'x_loc': range(-190, -81), 'y_loc': range(50, 201), 'name': 'Right-wing Mid-range'} # 4
-    l_wing_mid_range = {'x_loc': range(80,191), 'y_loc': range(50, 201), 'name': 'Left-wing Mid-range'} # 5
+    r_wing_mid_range = {'x_loc': range(-185, -81), 'y_loc': range(50, 201), 'name': 'Right-wing Mid-range'} # 4
+    l_wing_mid_range = {'x_loc': range(80,186), 'y_loc': range(50, 201), 'name': 'Left-wing Mid-range'} # 5
     r_baseline_mid_range = {'x_loc': range(-210, -81), 'y_loc': range(-53, 51), 'name': 'Right Baseline Mid-range'} # 6
     l_baseline_mid_range = {'x_loc': range(80, 211), 'y_loc': range(-53, 51), 'name': 'Left Baseline Mid-range'} # 7
     r_corner_threes = {'x_loc': range(-250, -211), 'y_loc': range(-53, 51), 'name': 'Right Corner 3'} # 8
