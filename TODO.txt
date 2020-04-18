@@ -14,10 +14,10 @@ django
     //    -made
     //    -missed
     //    -all
-    -fix zones
-        -include total makes per zone?
-    -re process and upload data
+    //-fix zones
+    //    -include total makes per zone?
     -views
     -forms
+    -re process and upload data
     -templates
     -css

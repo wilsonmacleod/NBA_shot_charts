@@ -23,10 +23,11 @@ def format_to_df(raw_data):
             'SHOT_MADE_FLAG': u.SHOT_MADE_FLAG,
             'ZONE_NAME': u.ZONE_NAME,
             'ACCURACY_FROM_ZONE': float(u.ACCURACY_FROM_ZONE),
+            'TOTALS': u.TOTALS,
             'SEASON': u.SEASON
         })
     df = pd.DataFrame(clean_list)
-    df.drop(df.columns[[0, 9]], axis=1, inplace=True)
+    df.drop(df.columns[[0, 10]], axis=1, inplace=True)
     return df
 
 def draw_plotly_court(fig, fig_width=600, margins=10):
@@ -202,7 +203,7 @@ def final_fig_gen(df):
         f'{str("Made" if df.SHOT_MADE_FLAG[i] == 1 else "Missed")} <BR>'
         f'<i>Distance: </i> {str(df.SHOT_DISTANCE[i])} ft.<BR>'
         f'<b>{str(df.ZONE_NAME[i])}</b><BR>'
-        f'<i>Accuracy From Zone: </i> {str(round(df.ACCURACY_FROM_ZONE[i]*100, 1))}%<BR>'
+        f'<i>Accuracy From Zone: </i> {str(round(df.ACCURACY_FROM_ZONE[i]*100, 1))}% ({str(df.TOTALS[i])})<BR>'
         for i in range(len(df.ACCURACY_FROM_ZONE))
     ]
 

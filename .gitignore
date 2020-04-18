@@ -6,6 +6,7 @@ data/env-data/
 data/json_data/player_details/*
 data/json_data/season_shotcharts/*
 data/urls.py*
+*.csv
 
 #DJANGO
 django/env-django/
