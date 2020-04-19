@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for r in results %}
+
+    <article class="one_third lastbox">
+        <figure><img src="https://stats.nba.com/media/players/230x185/{{r.PLAYER_ID}}.png" alt="No Image">
+          <figcaption>
+            <h1>{{ r.SEASON.0 }}<b></h1>
+            <h1><b>{{ r.PLAYER_NAME }}</b> </h1>
+            <p>Age:<b> {{ r.AGE|floatformat:-1 }}</b></p>
+            <p>Team:<b> {{ r.TEAM_ABBREVIATION }}</b></p>
+            <p><a href ="{% url 'player_view' season=r.SEASON pid=r.PLAYER_ID %}">CHART</a></p>
+          </figcaption>
+        </figure>
+      </article>
+    
+    {% endfor %}
+
+{% endblock content %}

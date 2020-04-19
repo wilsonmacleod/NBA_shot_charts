@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.db.models import Q
 
 from .models import Season, Player_id
 from .forms import PlayerSelect
 from .create_charts import Return_Data_and_Charts
-# Create your views here.
 
 def base(request):
     seasons = Season.objects.all()
@@ -12,7 +12,7 @@ def base(request):
     context={
         'season_choices': season_choices
     }
-    return render(request, 'base.html', context)
+    return render(request, 'home.html', context)
 
 
 def player_view(request, season, pid=None):
@@ -75,3 +75,22 @@ def next_season(request, season, pid):
         return redirect('player_view', season=next_season, pid=pid)
     except: 
         return redirect('base')
+
+def search(request):
+
+    query = request.GET.get('q')
+    if query:
+        results = Player_id.objects.filter(Q(PLAYER_NAME__icontains=query))
+    else:
+        messages.warning(request, f'No search entered.')
+        return redirect('base')
+
+    seasons = Season.objects.all()
+    season_choices = [i.YEAR for i in seasons]
+
+    context = {
+        'results': results,
+        'season_choices': season_choices
+    }
+    return render(request, 'search.html', context)
+
