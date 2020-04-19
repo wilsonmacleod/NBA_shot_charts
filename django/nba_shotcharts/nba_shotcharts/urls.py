@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app import views as user_views
+from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(f'', user_views.base, name="base"),
-    path(f'player_view/<season>', user_views.player_view, name="player_view"),
+    path(f'', views.base, name="base"),
+    path(f'player_view/<season>/<pid>', views.player_view, name="player_view"),
+    path(f'next_season/<season>/<pid>', views.next_season, name="next_season")
     ]

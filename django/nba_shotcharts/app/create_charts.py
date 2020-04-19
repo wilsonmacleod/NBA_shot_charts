@@ -14,6 +14,7 @@ def pull_from_db(player_id, season):
 def format_to_df(raw_data):
     clean_list = []
     for u in raw_data:
+        attempts = int(u.TOTALS.split('/')[1])
         clean_list.append({
             'django_id': u.id,
             'PLAYER_ID': u.PLAYER_ID,
@@ -24,11 +25,12 @@ def format_to_df(raw_data):
             'SHOT_MADE_FLAG': u.SHOT_MADE_FLAG,
             'ZONE_NAME': u.ZONE_NAME,
             'ACCURACY_FROM_ZONE': float(u.ACCURACY_FROM_ZONE),
+            'ATTEMPTS': attempts,
             'TOTALS': u.TOTALS,
             'SEASON': u.SEASON
         })
     df = pd.DataFrame(clean_list)
-    df.drop(df.columns[[0, 10]], axis=1, inplace=True)
+    df.drop(df.columns[[0, 11]], axis=1, inplace=True)
     return df
 
 def draw_plotly_court(fig, fig_width=600, margins=10):
@@ -57,12 +59,10 @@ def draw_plotly_court(fig, fig_width=600, margins=10):
     main_line_col = "#777777"
 
     fig.update_layout(
-        # Line Horizontal
         margin=dict(l=20, r=20, t=20, b=20),
         paper_bgcolor="white",
         plot_bgcolor="white",
         yaxis=dict(
-            scaleanchor="x",
             scaleratio=1,
             showgrid=False,
             zeroline=False,
@@ -193,13 +193,15 @@ def final_fig_gen(df):
 
     x = df['LOC_X']
     y = df['LOC_Y']
-    accuracy = df['ACCURACY_FROM_ZONE'] * 100
-    #result_marker = "Hexagon" if df['SHOT_MADE_FLAG'] == 1 else "Circle"
-    
-    marker_cmin = df['ACCURACY_FROM_ZONE'].min() * 100
-    marker_cmax = df['ACCURACY_FROM_ZONE'].max() * 100
-    ticktexts = ["Worst", "Average", "Best"]
+    #accuracy = df['ACCURACY_FROM_ZONE'] * 100
+    #marker_cmin = df['ACCURACY_FROM_ZONE'].min() * 100
+    #marker_cmax = df['ACCURACY_FROM_ZONE'].max() * 100
+    attempts = df['ATTEMPTS']
+    marker_cmin = df['ATTEMPTS'].min()
+    marker_cmax = df['ATTEMPTS'].max() 
+    marker_cmean = df['ATTEMPTS'].mean() 
 
+    ticktexts = ["Lowest", "Average", "Highest"]
     marker_text =  [
         f'{str("Made" if df.SHOT_MADE_FLAG[i] == 1 else "Missed")} <BR>'
         f'<i>Distance: </i> {str(df.SHOT_DISTANCE[i])} ft.<BR>'
@@ -208,28 +210,27 @@ def final_fig_gen(df):
         for i in range(len(df.ACCURACY_FROM_ZONE))
     ]
 
-    colorscale = 'RdYlBu_r'
     scat = go.Scatter(x=x, y=y,
                         mode='markers', name='Missed',
                         opacity=0.8,
                         marker=dict(
                             size=12,
-                            color=accuracy,
-                            colorscale='RdYlBu_r',
+                            color=attempts,
+                            colorscale='Reds',
                             colorbar=dict(
                                     thickness=15,
                                     x=0.84,
-                                    y=0.80,
+                                    y=0.87,
                                     yanchor='middle',
-                                    len=0.3,
+                                    len=0.26,
                                     title=dict(
-                                        text="<B>Accuracy</B>",
+                                        text="<B>Attempts</B>",
                                         font=dict(
                                             size=11,
                                             color='#4d4d4d'
                                         ),
                                     ),
-                                    tickvals=[marker_cmin, (marker_cmin + marker_cmax) / 2, marker_cmax],
+                                    tickvals=[marker_cmin, marker_cmean, marker_cmax],
                                     ticktext=ticktexts,
                                     tickfont=dict(
                                         size=11,

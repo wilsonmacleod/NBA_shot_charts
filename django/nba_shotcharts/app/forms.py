@@ -15,5 +15,6 @@ class PlayerSelect(forms.Form):
     
     # fields
     available_players = forms.ChoiceField(
-        choices=[]
+        choices=[], label=''
     )
+    available_players.widget.attrs.update({'class' : 'select-css'})

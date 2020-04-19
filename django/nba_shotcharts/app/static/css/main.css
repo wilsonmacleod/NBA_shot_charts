@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 13px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
     color: #919191;
     background-color: #FFFFFF;
 }
@@ -143,7 +143,7 @@ div.wrapper {
     position: fixed;
     left: 0;
     bottom: 0;
-    max-height: 5%;
+    max-height: 7%;
     color: #989898;
     background-color: #333333;
 }
@@ -320,7 +320,7 @@ select {
 
 #header nav {
     display: block;
-    float: center;
+    float: left;
     margin: 10px 0 0 0;
     padding: 20px 0;
     color: #C0BAB6;
@@ -351,6 +351,12 @@ select {
     background-color: #232323;
 }
 
+#header nav li a span {
+    color: #FF9900;
+    background-color: #232323;
+    text-decoration: underline;
+}
+
 /*----------------------------------------------Content Area-------------------------------------*/
 
 #container {
@@ -374,7 +380,18 @@ select {
 
 /* ------Slider-----*/
 
-#container #slider {}
+#container #slider {
+    display: inline-block;
+    width: 100%;
+}
+#first {
+    width: 25%;
+    float:left;
+}
+
+.alert{
+    width: 50%;
+}
 
 /* ------Main Content-----*/
 
@@ -382,6 +399,7 @@ select {
     display: block;
     width: 100%;
     line-height: 1.8em;
+    font-size: 18px;
 }
 
 #container #homepage #services {}
@@ -391,7 +409,7 @@ select {
 #container #homepage #services article figure {}
 
 #container #homepage #services article figure img {
-    margin: 0 0 15px 0;
+    margin-right: 10%;
     padding: 4px;
     border: 1px solid #D6D6D6;
 }
@@ -412,18 +430,28 @@ select {
 #container #homepage #intro article figure {}
 
 #container #homepage #intro article figure img {
-    float: right;
+    float: left;
+    min-height:230px; 
+    min-width:185px;
     margin: 0 0 10px 0;
+    margin-top: 30px;
     padding: 4px;
-    border: 1px solid #D6D6D6;
+    border: 2px solid black;
 }
 
 #container #homepage #intro article figure figcaption {
     float: left;
     width: 460px;
+    color: #989898;
 }
 
-#container #homepage #intro article figure h2 {}
+#container #homepage #intro article figure figcaption h1{
+    float: left;
+    width: 460px;
+    color: black;
+    text-decoration: underline;
+}
+
 
 #container #homepage #intro article figure footer {}
 
@@ -464,4 +492,56 @@ select {
 #copyright p {
     margin: 0;
     padding: 0;
+}
+
+.select-css {
+	display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+    width: 70%;
+	box-sizing: border-box;
+	border: 1px solid #919191;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%21007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+	  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    cursor: pointer;
+}
+.select-css::-ms-expand {
+	display: none;
+}
+.select-css:hover {
+	border-color: #FF9900;
+}
+.select-css:focus {
+	border-color: #FF9900;
+	box-shadow: 0 0 1px 1px #FF9900;
+	box-shadow: 0 0 0 1px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+.select-css option {
+	font-weight:normal;
+}
+
+.btn{
+    margin-left: 5px;
+    border: 1px solid #919191;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn:hover{
+    border: 1px solid #FF9900;
 }

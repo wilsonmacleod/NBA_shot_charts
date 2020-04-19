@@ -1,16 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-  
 <section id="slider">
-<div>
-    <form method="GET">
+<div class="inline-block">
+    <form method="GET" id="first">
         {{ player_select }}
-        <input type="submit" value="Submit"> 
+        <input class="btn" type="submit" value="Select"> 
     </form>
-  </div>
-</section>
+    {% if chart != '' %}
+  <form action="{% url 'next_season' season=season pid=player_details.PLAYER_ID %}" id="second">
+      <input class="btn" type="submit" value="{{ player_details.PLAYER_NAME }} Next Year">
+  </form>
+  {% endif %}
+</div>
 
+</section>
+{% if chart != '' %}
 <section id="services" class="clear">
     <article class="one_third">
         {% autoescape off %}
@@ -18,17 +23,18 @@
     {% endautoescape %}
     </article>
     <article class="one_third lastbox">
-      <figure><img src="images/demo/290x180.gif" width="180" height="180" alt="Template Demo Image">
+      <figure><img src="https://stats.nba.com/media/players/230x185/{{player_details.PLAYER_ID}}.png" alt="No Image">
         <figcaption>
-          <h1>{{ season }} <bold>{{ player_details.PLAYER_NAME }}</bold></h1>
-          <p>Age:<bold> {{ player_details.AGE }}</bold></p>
-          <p>Team:<bold> {{ player_details.TEAM_ABBREVIATION }}</bold></p>
+          <h1>{{ season }} <b>{{ player_details.PLAYER_NAME }}</b></h1>
+          <p>Age:<b> {{ player_details.AGE }}</b></p>
+          <p>Team:<b> {{ player_details.TEAM_ABBREVIATION }}</b></p>
           <p>Most Attempted Zone: {{ most_att }}</p>
-          <p>Highest accuracy zone: {{ highest_acc }}</p>
+          <p>Highest Accuracy Zone: {{ highest_acc }}</p>
           <p>Avg Shot Distance: {{ avg_dist }}</p>
         </figcaption>
       </figure>
     </article>
 </section>
+{% endif %}
 
 {% endblock content %}

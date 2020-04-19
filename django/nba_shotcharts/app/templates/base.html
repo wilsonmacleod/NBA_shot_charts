@@ -9,25 +9,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>    
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <!-- Google-Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 
     <!--Plotly-->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-        <title>Django DEV-MODE</title>
+    <title>NBA Shot Charts | wilsonmacleod.com</title>
 
 </head>
 <body>
     <div class="wrapper row1">
-      <div><a href="{% url 'base' %}">Home</a></div>
       <header id="header" class="clear">
+        <a href="{% url 'base' %}">Home</a>
         <nav>
           <ul>
-              {% for season in  season_choices%}
-                <li><a href="{% url 'player_view' season=season %}">{{season}}</a></li>
+              {% for s in  season_choices%}
+                  {% if s == season %}
+                  <li><a href="{% url 'player_view' season=s pid=None %}"><span>{{s}}</span></a></li>
+                  {% else %}
+                  <li><a href="{% url 'player_view' season=s pid=None %}">{{s}}</a></li>
+                  {% endif %}
                 {% endfor %}
           </ul>
         </nav>
@@ -44,6 +54,13 @@
           <!-- ########################################################################################## -->
           <!-- Introduction -->
           <section id="intro" class="last clear">
+            {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+            {% endif %}
             <article>
                 {% block content %}{% endblock %}
             </article>
@@ -58,42 +75,11 @@
       <div id="footer" class="clear">
         <!-- Section One -->
         <section class="one_quarter">
-          <h2 class="title">MY SITE</h2>
-          <nav>
-            <ul>
-              <li><a href="#">Lorem ipsum dolor sit</a></li>
-              <li><a href="#">Amet consectetur</a></li>
-              <li><a href="#">Praesent vel sem id</a></li>
-              <li><a href="#">Curabitur hendrerit est</a></li>
-              <li class="last"><a href="#">Sed a nulla urna</a></li>
-            </ul>
-          </nav>
+          <h2 class="title"><a href="https://wilsonmacleod.com/">MY PERSONAL SITE</a></h2>
         </section>
         <!-- Section Two -->
         <section class="one_quarter">
-          <h2 class="title">CONTACT</h2>
-          <nav>
-            <ul>
-              <li><a href="#">Lorem ipsum dolor sit</a></li>
-              <li><a href="#">Amet consectetur</a></li>
-              <li><a href="#">Praesent vel sem id</a></li>
-              <li><a href="#">Curabitur hendrerit est</a></li>
-              <li class="last"><a href="#">Sed a nulla urna</a></li>
-            </ul>
-          </nav>
-        </section>
-        <!-- Section Three -->
-        <section class="one_quarter">
-          <h2 class="title">GITHUB</h2>
-          <nav>
-            <ul>
-              <li><a href="#">Lorem ipsum dolor sit</a></li>
-              <li><a href="#">Amet consectetur</a></li>
-              <li><a href="#">Praesent vel sem id</a></li>
-              <li><a href="#">Curabitur hendrerit est</a></li>
-              <li class="last"><a href="#">Sed a nulla urna</a></li>
-            </ul>
-          </nav>
+          <h2 class="title"><a href="https://github.com/wilsonmacleod">GITHUB</a></h2>
         </section>
       </div>
     </div>
