@@ -2,11 +2,19 @@
 
 {% block content %}
 
+<h3>Welcome</h3>
+<p></p>
+<p>Blah blah blah</p>
+<p>Blah blah blah Blah blah blah</p>
+<p>Blah blah blah Blah blah blah</p>
 <form method="GET" action="{% url 'search' %}">
-    <input name="q" value="{{ request.get.q }}" placeholder="Search..." />
-    <button class="btn" type="submit">
-        Search
-    </button>
+    <div class="search">
+       <input type="text" class="searchTerm" name="q" value="{{ request.get.q }}" placeholder="Search...">
+       <button type="submit" class="searchButton">
+         <i class="fa fa-search" type="submit"></i>
+      </button>
+    </div>
 </form>
+
 
 {% endblock content %}

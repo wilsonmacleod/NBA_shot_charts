@@ -1,26 +1,12 @@
-"""nba_shotcharts URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
+
 from app.views import base, search, player_view, next_season
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(f'', base, name="base"),
     path(f'search/', search, name="search"),
-    path(f'player_view/<season>/<pid>', player_view, name="player_view"),
-    path(f'next_season/<season>/<pid>', next_season, name="next_season")
+    path(f'player_view/<season>/<pid>/<chart_type>', player_view, name="player_view"),
+    path(f'next_season/<season>/<pid>/<chart_type>', next_season, name="next_season"),
     ]

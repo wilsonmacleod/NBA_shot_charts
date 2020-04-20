@@ -16,6 +16,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    
+    <!-- FA icons -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Google-Font CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
@@ -29,14 +32,14 @@
 <body>
     <div class="wrapper row1">
       <header id="header" class="clear">
-        <a href="{% url 'base' %}">Home</a>
+        <a class="home" href="{% url 'base' %}">Home</a>
         <nav>
           <ul>
               {% for s in  season_choices%}
                   {% if s == season %}
-                  <li><a href="{% url 'player_view' season=s pid=None %}"><span>{{s}}</span></a></li>
+                  <li><a href="{% url 'player_view' season=s pid=None chart_type='default'%}"><span>{{s}}</span></a></li>
                   {% else %}
-                  <li><a href="{% url 'player_view' season=s pid=None %}">{{s}}</a></li>
+                  <li><a href="{% url 'player_view' season=s pid=None chart_type='default'%}">{{s}}</a></li>
                   {% endif %}
                 {% endfor %}
           </ul>
@@ -79,7 +82,7 @@
         </section>
         <!-- Section Two -->
         <section class="one_quarter">
-          <h2 class="title"><a href="https://github.com/wilsonmacleod">GITHUB</a></h2>
+          <h2 class="title"><a href="https://github.com/wilsonmacleod/NBA_shot-charts">GITHUB</a></h2>
         </section>
       </div>
     </div>

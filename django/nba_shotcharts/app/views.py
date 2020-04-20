@@ -15,7 +15,7 @@ def base(request):
     return render(request, 'home.html', context)
 
 
-def player_view(request, season, pid=None):
+def player_view(request, season, pid=None, chart_type='default'):
     #Shot_data.objects.all().delete()
     
     seasons = Season.objects.all()
@@ -36,15 +36,15 @@ def player_view(request, season, pid=None):
     # SET DISPLAY
     if show_chart:
         try:
-            player_details, obj, chart = Return_Data_and_Charts.main(pid, season)
+            player_details, obj, chart = Return_Data_and_Charts.main(pid, season, chart_type)
             most_att = obj['most_attempted_zone']
             highest_acc = obj['highest_accuracy_zone']
             avg_dist = obj['average_distance']
         except:
             selected = season_choices.index(season)
             back = season_choices[selected - 1]
-            messages.warning(request, f'No data for this player for this season.')
-            return redirect('player_view', season=back, pid=pid)
+            messages.warning(request, f'No data for this player for {season}.')
+            return redirect('player_view', season=back, pid=pid, chart_type=chart_type)
     else:
         player_details = ''
         most_att = ''
@@ -60,19 +60,20 @@ def player_view(request, season, pid=None):
         'highest_acc': highest_acc,
         'avg_dist': avg_dist,
         'season': season,
-        'chart': chart
+        'chart': chart,
+        'chart_type': chart_type
     }
 
     return render(request, 'player_view.html', context)
 
 
-def next_season(request, season, pid):
+def next_season(request, season, pid, chart_type):
     try:
         seasons = Season.objects.all()
         season_choices = [i.YEAR for i in seasons]
         current = season_choices.index(season)
         next_season = season_choices[current + 1]
-        return redirect('player_view', season=next_season, pid=pid)
+        return redirect('player_view', season=next_season, pid=pid, chart_type=chart_type)
     except: 
         return redirect('base')
 
@@ -80,14 +81,14 @@ def search(request):
 
     query = request.GET.get('q')
     if query:
-        results = Player_id.objects.filter(Q(PLAYER_NAME__icontains=query))
+        results = Player_id.objects.filter(Q(PLAYER_NAME__icontains=query)).order_by('-SEASON')[:20]
     else:
         messages.warning(request, f'No search entered.')
         return redirect('base')
 
     seasons = Season.objects.all()
     season_choices = [i.YEAR for i in seasons]
-
+    
     context = {
         'results': results,
         'season_choices': season_choices

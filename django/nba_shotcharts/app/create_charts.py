@@ -187,19 +187,24 @@ def draw_plotly_court(fig, fig_width=600, margins=10):
         ]
     )
 
-def final_fig_gen(df):
+def final_fig_gen(df, chart_type):
     fig = go.Figure()
     draw_plotly_court(fig)
 
     x = df['LOC_X']
     y = df['LOC_Y']
-    #accuracy = df['ACCURACY_FROM_ZONE'] * 100
-    #marker_cmin = df['ACCURACY_FROM_ZONE'].min() * 100
-    #marker_cmax = df['ACCURACY_FROM_ZONE'].max() * 100
-    attempts = df['ATTEMPTS']
-    marker_cmin = df['ATTEMPTS'].min()
-    marker_cmax = df['ATTEMPTS'].max() 
-    marker_cmean = df['ATTEMPTS'].mean() 
+    if chart_type == 'default':
+        color = df['ATTEMPTS']
+        marker_cmin = df['ATTEMPTS'].min()
+        marker_cmax = df['ATTEMPTS'].max()
+        marker_cmean = df['ATTEMPTS'].mean() 
+        title_text = "<B>Attempts</B>"
+    else:
+        color = df['ACCURACY_FROM_ZONE'] * 100
+        marker_cmin = df['ACCURACY_FROM_ZONE'].min() * 100
+        marker_cmax = df['ACCURACY_FROM_ZONE'].max() * 100
+        marker_cmean = df['ACCURACY_FROM_ZONE'].mean() * 100  
+        title_text = "<B>Accuracy</B>"
 
     ticktexts = ["Lowest", "Average", "Highest"]
     marker_text =  [
@@ -211,12 +216,12 @@ def final_fig_gen(df):
     ]
 
     scat = go.Scatter(x=x, y=y,
-                        mode='markers', name='Missed',
+                        mode='markers',
                         opacity=0.8,
                         marker=dict(
                             size=12,
-                            color=attempts,
-                            colorscale='Reds',
+                            color=color,
+                            colorscale='YlOrRd',
                             colorbar=dict(
                                     thickness=15,
                                     x=0.84,
@@ -224,7 +229,7 @@ def final_fig_gen(df):
                                     yanchor='middle',
                                     len=0.26,
                                     title=dict(
-                                        text="<B>Attempts</B>",
+                                        text=title_text,
                                         font=dict(
                                             size=11,
                                             color='#4d4d4d'
@@ -244,7 +249,7 @@ def final_fig_gen(df):
                             symbol='hexagon'
                         ),
                         text=marker_text,
-                        hoverinfo='text' #'text'
+                        hoverinfo='text', #'text'
                         )      
     fig.add_trace(scat)
     plt_div = plot(fig, output_type='div', include_plotlyjs=False, link_text="", config=dict(displayModeBar=False))
@@ -267,9 +272,9 @@ def df_to_presentation(df):
     return return_obj
 
 class Return_Data_and_Charts():
-    def main(player_id, season):
+    def main(player_id, season, chart_type):
         player, raw_data = pull_from_db(player_id, season)
         df = format_to_df(raw_data)
         obj = df_to_presentation(df)
-        return player, obj, final_fig_gen(df)
+        return player, obj, final_fig_gen(df, chart_type)
         

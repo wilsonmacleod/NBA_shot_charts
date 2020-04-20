@@ -7,8 +7,8 @@
         {{ player_select }}
         <input class="btn" type="submit" value="Select"> 
     </form>
-    {% if chart != '' %}
-  <form action="{% url 'next_season' season=season pid=player_details.PLAYER_ID %}" id="second">
+    {% if chart != '' and season != '2019-20' %}
+  <form action="{% url 'next_season' season=season pid=player_details.PLAYER_ID chart_type=chart_type %}" id="second">
       <input class="btn" type="submit" value="{{ player_details.PLAYER_NAME }} Next Year">
   </form>
   {% endif %}
@@ -21,11 +21,20 @@
         {% autoescape off %}
         <div>{{ chart }}</div>
     {% endautoescape %}
+      {% if chart_type == 'default' %}
+      <form action="{% url 'player_view' season=season pid=player_details.PLAYER_ID chart_type='accuracy'%}" id="second">
+        <input class="btn" type="submit" value="Accuracy View">
+      </form>
+      {% else %}
+      <form action="{% url 'player_view' season=season pid=player_details.PLAYER_ID chart_type='default'%}" id="second">
+        <input class="btn" type="submit" value="Attempts View">
+      </form>
+      {% endif %}
     </article>
     <article class="one_third lastbox">
       <figure><img src="https://stats.nba.com/media/players/230x185/{{player_details.PLAYER_ID}}.png" alt="No Image">
         <figcaption>
-          <h1>{{ season }} <b>{{ player_details.PLAYER_NAME }}</b></h1>
+          <h1>{{ season }} <b> {{ player_details.PLAYER_NAME }}</b></h1>
           <p>Age:<b> {{ player_details.AGE }}</b></p>
           <p>Team:<b> {{ player_details.TEAM_ABBREVIATION }}</b></p>
           <p>Most Attempted Zone: {{ most_att }}</p>
@@ -35,6 +44,7 @@
       </figure>
     </article>
 </section>
+
 {% endif %}
 
 {% endblock content %}
