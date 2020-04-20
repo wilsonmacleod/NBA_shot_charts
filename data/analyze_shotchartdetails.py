@@ -1,10 +1,10 @@
+import json
 import os
 from os import path
-import json
 
+import numpy as np
 import pandas as pd
 from pandas.io.json import json_normalize
-import numpy as np
 from tqdm import tqdm
 
 ### IMPROVE  ZONES
@@ -103,7 +103,6 @@ def clean_df_per_hex(df, zone_df):
     fin_df = pd.DataFrame(final_df_dict.values())
     return fin_df
 
-#C:\Users\wilso\Desktop\nba_shotcharts\data\json_data\season_shotcharts\2010-11
 def format_json(data):
     data = pd.DataFrame.from_dict(json_normalize(data), orient='columns')
     data.drop(data.columns[[0]], axis=1, inplace=True)
@@ -121,7 +120,7 @@ def write_json(df, season):
     df.to_csv('df-fail.csv')
     df['SEASON'] = season
     data = [{'model': 'app.Shot_data', 'fields': {j: row[j] for j in df.columns}} for i, row in df.iterrows()]
-    finalpath = r'../django/nba_shotcharts/app/fixtures/' #django\nba_shotcharts\app\fixtures
+    finalpath = '/json_data/season_shotcharts/cleaned_data/''
     with open(finalpath + f'{df["PLAYER_ID"][0]}-{season}.json', 'w') as f:
         json.dump(data, f)
 
@@ -138,7 +137,7 @@ def main(season):
                 fin = clean_df_per_hex(df, zone_df)
                 write_json(fin, season)
             else:
-                no_data_files.append(f'{each}') # empty downloaded json returned from nba
+                no_data_files.append(f'{each}')
 
 if __name__ == "__main__": 
     count = 10

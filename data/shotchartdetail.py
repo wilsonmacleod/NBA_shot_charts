@@ -15,8 +15,6 @@ from urls import Urls
 # 'SHOT_ZONE_RANGE' 'SHOT_DISTANCE' 'LOC_X' 'LOC_Y' 'SHOT_ATTEMPTED_FLAG'
 # 'SHOT_MADE_FLAG' 'GAME_DATE' 'HTM' 'VTM']
 
-#Jumpshot, 2 feet away, missed, 4th period 2:12 minutes remaining vs. Bulls, 2020-04-22
-
 def get_shotchart_data(player_id, season):
     url = Urls.shotchart_data(player_id, season)
     headers = Urls.headers()
@@ -32,7 +30,6 @@ def get_shotchart_data(player_id, season):
 def parse_player_ids(season):
     basepath = path.dirname(__file__)
     finalpath = basepath + f'/json_data/player_details/{season}.json'
-    #finalpath = r'C:\Users\wilso\Desktop\nba_shotcharts\crawlers\data\player_details\2010-11.json'
     with open(finalpath, 'r') as f:
         data = json.load(f)
     id_list = []

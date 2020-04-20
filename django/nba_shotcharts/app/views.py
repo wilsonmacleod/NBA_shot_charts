@@ -4,7 +4,7 @@ from django.db.models import Q
 
 from .models import Season, Player_id
 from .forms import PlayerSelect
-from .create_charts import Return_Data_and_Charts
+from .create_charts import create_charts as cc
 
 def base(request):
     seasons = Season.objects.all()
@@ -16,7 +16,6 @@ def base(request):
 
 
 def player_view(request, season, pid=None, chart_type='default'):
-    #Shot_data.objects.all().delete()
     
     seasons = Season.objects.all()
     season_choices = [i.YEAR for i in seasons]
@@ -36,15 +35,18 @@ def player_view(request, season, pid=None, chart_type='default'):
     # SET DISPLAY
     if show_chart:
         try:
-            player_details, obj, chart = Return_Data_and_Charts.main(pid, season, chart_type)
+            player_details, obj, chart = cc.main(pid, season, chart_type)
             most_att = obj['most_attempted_zone']
             highest_acc = obj['highest_accuracy_zone']
             avg_dist = obj['average_distance']
-        except:
+        except AttributeError:
             selected = season_choices.index(season)
             back = season_choices[selected - 1]
             messages.warning(request, f'No data for this player for {season}.')
             return redirect('player_view', season=back, pid=pid, chart_type=chart_type)
+        except:
+            messages.warning(request, f'Something went wrong.')
+            return redirect('base')
     else:
         player_details = ''
         most_att = ''

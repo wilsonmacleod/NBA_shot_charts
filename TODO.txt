@@ -1,23 +1,4 @@
-###
+##
 
-//Datastuctures
-//    -shot data per player per season
-//    -player id, name, team, age
-
-django
-    //-models
-    //-fixtures
-    //-figure creating classes
-    //    -more data
-    //        -length
-    //    -frequency
-    //    -made
-    //    -missed
-    //    -all
-    //-fix zones
-    //    -include total makes per zone?
-    -views
-    -forms
-    -re process and upload data
-    -templates
-    -css
+-- partner CLI app
+-- player season stats

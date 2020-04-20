@@ -1,0 +1,3 @@
+#!/bin/bash
+python C:/Users/wilso/Desktop/nba_shotcharts/data/analyze_shotchartdetails.py
+python C:/Users/wilso/Desktop/nba_shotcharts/django/nba_shotcharts/scripts/load_all_fixtures.py

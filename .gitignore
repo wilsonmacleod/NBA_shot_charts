@@ -1,5 +1,6 @@
 #GENERAL
 __pycache__
+.vscode
 
 #DATA
 data/env-data/
