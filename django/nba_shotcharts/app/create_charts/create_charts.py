@@ -1,16 +1,20 @@
 import numpy as np
-import pandas as pd 
+import pandas as pd
 from plotly.offline import plot
 import plotly.graph_objs as go
 
 from app.models import Player_id, Shot_data
 from .draw_court import draw_plotly_court
 
+
 def pull_from_db(player_id, season):
-    player = Player_id.objects.filter(SEASON=season).filter(PLAYER_ID=player_id).first()
+    player = Player_id.objects.filter(
+        SEASON=season).filter(PLAYER_ID=player_id).first()
     player.AGE = player.AGE[0:2]
-    raw_data = Shot_data.objects.filter(SEASON=season).filter(PLAYER_ID=player_id).all()
+    raw_data = Shot_data.objects.filter(
+        SEASON=season).filter(PLAYER_ID=player_id).all()
     return player, raw_data
+
 
 def format_to_df(raw_data):
     clean_list = []
@@ -34,7 +38,8 @@ def format_to_df(raw_data):
     df.drop(df.columns[[0, 11]], axis=1, inplace=True)
     return df
 
-def df_to_presentation(df): # side data
+
+def df_to_presentation(df):  # side data
     y = 0
     li = list(df.ZONE_NAME.unique())
     d = {i: 0 for i in li}
@@ -49,6 +54,7 @@ def df_to_presentation(df): # side data
     return_obj['average_distance'] = f'{round(df.SHOT_DISTANCE.mean(), 2)} ft.'
     return return_obj
 
+
 def final_fig_gen(df, chart_type):
     fig = go.Figure()
     draw_plotly_court(fig)
@@ -59,17 +65,17 @@ def final_fig_gen(df, chart_type):
         color = df['ATTEMPTS']
         marker_cmin = df['ATTEMPTS'].min()
         marker_cmax = df['ATTEMPTS'].max()
-        marker_cmean = df['ATTEMPTS'].mean() 
+        marker_cmean = df['ATTEMPTS'].mean()
         title_text = "<B>Attempts</B>"
     else:
         color = df['ACCURACY_FROM_ZONE'] * 100
         marker_cmin = df['ACCURACY_FROM_ZONE'].min() * 100
         marker_cmax = df['ACCURACY_FROM_ZONE'].max() * 100
-        marker_cmean = df['ACCURACY_FROM_ZONE'].mean() * 100  
+        marker_cmean = df['ACCURACY_FROM_ZONE'].mean() * 100
         title_text = "<B>Accuracy</B>"
 
     ticktexts = ["Lowest", "Average", "Highest"]
-    marker_text =  [
+    marker_text = [
         f'{str("Made" if df.SHOT_MADE_FLAG[i] == 1 else "Missed")} <BR>'
         f'<i>Distance: </i> {str(df.SHOT_DISTANCE[i])} ft.<BR>'
         f'<b>{str(df.ZONE_NAME[i])}</b><BR>'
@@ -78,44 +84,47 @@ def final_fig_gen(df, chart_type):
     ]
 
     scat = go.Scatter(x=x, y=y,
-                        mode='markers',
-                        opacity=0.8,
-                        marker=dict(
-                            size=12,
-                            color=color,
-                            colorscale='YlOrRd',
-                            colorbar=dict(
-                                    thickness=15,
-                                    x=0.82,
-                                    y=0.85,
-                                    yanchor='middle',
-                                    len=0.26,
-                                    title=dict(
-                                        text=title_text,
-                                        font=dict(
-                                            size=14,
-                                            color='#4d4d4d'
-                                        ),
-                                    ),
-                                    tickvals=[marker_cmin, marker_cmean, marker_cmax],
-                                    ticktext=ticktexts,
-                                    tickfont=dict(
-                                        size=11,
-                                        color='black'
-                                    )
-                                ),
-                            line=dict(
-                                width=1.5, 
-                                color='black'
-                            ), 
-                            symbol='hexagon'
-                        ),
-                        text=marker_text,
-                        hoverinfo='text'
-                        )      
+                      mode='markers',
+                      opacity=0.8,
+                      marker=dict(
+                          size=12,
+                          color=color,
+                          colorscale='YlOrRd',
+                          colorbar=dict(
+                              thickness=15,
+                              x=0.82,
+                              y=0.85,
+                              yanchor='middle',
+                              len=0.26,
+                              title=dict(
+                                  text=title_text,
+                                  font=dict(
+                                      size=14,
+                                      color='#4d4d4d'
+                                  ),
+                              ),
+                              tickvals=[marker_cmin,
+                                        marker_cmean, marker_cmax],
+                              ticktext=ticktexts,
+                              tickfont=dict(
+                                  size=11,
+                                  color='black'
+                              )
+                          ),
+                          line=dict(
+                              width=1.5,
+                              color='black'
+                          ),
+                          symbol='hexagon'
+                      ),
+                      text=marker_text,
+                      hoverinfo='text'
+                      )
     fig.add_trace(scat)
-    plt_div = plot(fig, output_type='div', include_plotlyjs=False, link_text="", config=dict(displayModeBar=False))
+    plt_div = plot(fig, output_type='div', include_plotlyjs=False,
+                   link_text="", config=dict(displayModeBar=False))
     return plt_div
+
 
 def main(player_id, season, chart_type):
     player, raw_data = pull_from_db(player_id, season)

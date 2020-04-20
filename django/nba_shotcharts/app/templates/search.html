@@ -13,19 +13,28 @@
 
 
     {% for r in results %}
-
-    <article class="one_third lastbox">
-        <figure><img src="https://stats.nba.com/media/players/230x185/{{r.PLAYER_ID}}.png" alt="No Image">
-          <figcaption>
-            <h1><b>{{ r.PLAYER_NAME }}</b></h1>
-            <h5>{{ r.SEASON.YEAR }}</h5>
-            <p>Age:<b> {{ r.AGE|floatformat:-1 }}</b></p>
-            <p>Team:<b> {{ r.TEAM_ABBREVIATION }}</b></p>
-            <p><a href ="{% url 'player_view' season=r.SEASON.YEAR pid=r.PLAYER_ID chart_type='default'%}">CHART</a></p>
-          </figcaption>
-        </figure>
-      </article>
-    
+      {% if results != 'None' %}
+        <article class="one_third_result">
+            <figure>
+              <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/{{r.PLAYER_ID}}.png" alt="No Image">
+              <figcaption>
+                <h1><b>{{ r.PLAYER_NAME }}</b></h1>
+                <h5>{{ r.SEASON.YEAR }}</h5>
+                <p>Age:<b> {{ r.AGE|floatformat:-1 }}</b></p>
+                <p>Team:<b> {{ r.TEAM_ABBREVIATION }}</b></p>
+                <p><a href ="{% url 'player_view' season=r.SEASON.YEAR pid=r.PLAYER_ID chart_type='default'%}">CHART</a></p>
+              </figcaption>
+            </figure>
+          </article>
+      {% endif %}
     {% endfor %}
 
+    {% if results == 'None' %}
+        <article class="one_third lastbox">
+          <figcaption>
+          <h1><b>No Results Found....</b></h1>
+        </figcaption>
+      </article>
+    {% endif %}
+ 
 {% endblock content %}

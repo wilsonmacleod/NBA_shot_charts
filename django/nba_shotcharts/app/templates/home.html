@@ -2,19 +2,21 @@
 
 {% block content %}
 
-<h3>Welcome</h3>
+<h3><b>Welcome</b></h3>
 <p></p>
-<p>Blah blah blah</p>
-<p>Blah blah blah Blah blah blah</p>
-<p>Blah blah blah Blah blah blah</p>
 <form method="GET" action="{% url 'search' %}">
     <div class="search">
        <input type="text" class="searchTerm" name="q" value="{{ request.get.q }}" placeholder="Search...">
        <button type="submit" class="searchButton">
-         <i class="fa fa-search" type="submit"></i>
+        <i class="fa fa-search" type="submit"></i> 
       </button>
     </div>
 </form>
-
+<p></p>
+<article class="three_third">
+  <p>All data is pulled from the NBA's unofficial API (nba.stats.com).</p>
+  <p>The data was then processed using the Pandas and Numpy Python libraries, plots were created using Plotly and the site Django.</p>
+  <p>The dataset contains all players who registered a shot between the 2010-11 and 2019-20 seasons.</p>
+</article>
 
 {% endblock content %}

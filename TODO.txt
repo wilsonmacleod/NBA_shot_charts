@@ -1,4 +1,8 @@
-##
+==WEB==
 
--- partner CLI app
+- loading...
+- compare?
+
+==Future==
+-- CLI app
 -- player season stats

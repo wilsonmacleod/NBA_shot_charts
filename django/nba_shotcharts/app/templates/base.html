@@ -19,10 +19,10 @@
     
     <!-- FA icons -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Google-Font CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!--Plotly-->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
@@ -32,7 +32,17 @@
 <body>
     <div class="wrapper row1">
       <header id="header" class="clear">
-        <a class="home" href="{% url 'base' %}">Home</a>
+        <form method="GET" action="{% url 'search' %}">
+          <a class="home" href="{% url 'home' %}">Home</a>
+          {% if chart %}
+          <div class="search">
+             <input type="text" class="searchTerm" name="q" value="{{ request.get.q }}" placeholder="Search...">
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search" type="submit"></i>
+            </button>
+          </div>
+          {% endif %}      
+        </form>
         <nav>
           <ul>
               {% for s in  season_choices%}
@@ -48,7 +58,7 @@
     </div>
     <!-- content -->
     <div class="wrapper row2">
-      <div id="container" class="clear">
+      <div id="container" class="intro">
         <!-- main content -->
         <div id="homepage">
           <!-- ########################################################################################## -->
@@ -78,14 +88,11 @@
       <div id="footer" class="clear">
         <!-- Section One -->
         <section class="one_quarter">
-          <h2 class="title"><a href="https://wilsonmacleod.com/">MY PERSONAL SITE</a></h2>
-        </section>
-        <!-- Section Two -->
-        <section class="one_quarter">
           <h2 class="title"><a href="https://github.com/wilsonmacleod/NBA_shot-charts">GITHUB</a></h2>
         </section>
       </div>
     </div>
+
     </body>
 </body>
 </html>

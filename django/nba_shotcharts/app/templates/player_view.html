@@ -32,19 +32,20 @@
       {% endif %}
     </article>
     <article class="one_third lastbox">
-      <figure><img src="https://stats.nba.com/media/players/230x185/{{player_details.PLAYER_ID}}.png" alt="No Image">
+      <figure>
+        <img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/{{player_details.PLAYER_ID}}.png" alt="No Image">
         <figcaption>
-          <h1>{{ season }} <b> {{ player_details.PLAYER_NAME }}</b></h1>
-          <p>Age:<b> {{ player_details.AGE }}</b></p>
-          <p>Team:<b> {{ player_details.TEAM_ABBREVIATION }}</b></p>
-          <p>Most Attempted Zone: {{ most_att }}</p>
-          <p>Highest Accuracy Zone: {{ highest_acc }}</p>
-          <p>Avg Shot Distance: {{ avg_dist }}</p>
+          <h1>{{ player_details.PLAYER_NAME }}</h1>
+          <p><b>Season:</b> {{ season }}</p>
+          <p><b>Age:</b> {{ player_details.AGE }}</p>
+          <p><b>Team:</b> {{ player_details.TEAM_ABBREVIATION }}</p>
+          <p><b>Most Attempted Zone:</b> {{ most_att }}</p>
+          <p><b>Highest Accuracy Zone:</b> {{ highest_acc }}</p>
+          <p><b>Avg Shot Distance:</b> {{ avg_dist }}</p>
         </figcaption>
       </figure>
     </article>
 </section>
-
 {% endif %}
 
 {% endblock content %}

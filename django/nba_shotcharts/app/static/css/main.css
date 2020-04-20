@@ -92,6 +92,11 @@ section {
     padding: 0;
 }
 
+figcaption b{
+    font-weight: 900;
+    color: black;
+}
+
 q {
     display: block;
     padding: 0 10px 8px 10px;
@@ -111,6 +116,7 @@ q:after {
     font-size: 26px;
     line-height: 0;
 }
+
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
@@ -132,6 +138,7 @@ div.wrapper {
 .row2 {
     color: #979797;
     background-color: #FFFFFF;
+    padding-bottom: 50px !important;
 }
 
 .row2 a {
@@ -188,6 +195,13 @@ h6 {
     font-weight: normal;
     font-style: italic;
     line-height: normal;
+}
+
+h3 b {
+    font-family: 'Oswald', sans-serif;
+    font-size: 64px;
+    font-weight: 1000;
+    color: #232323
 }
 
 address {
@@ -276,12 +290,19 @@ select {
     width: 300px;
 }
 
+.one_third_result {
+    display: block;
+    float: left;
+    margin: 0 30px 0 0;
+    width: 325px;
+}
+
 .two_third {
     width: 630px;
 }
 
 .three_third {
-    width: 960px;
+    width: 600px;
     float: none;
     margin-right: 0;
     clear: both;
@@ -289,6 +310,11 @@ select {
 
 .lastbox {
     margin-left: 30%;
+    margin-right: 0;
+}
+
+.imgbox {
+    margin-left: 700px;
     margin-right: 0;
 }
 
@@ -366,8 +392,9 @@ select {
 #container section {
     display: block;
     width: 100%;
-    padding: 0;
+    padding-bottom: 0;
 }
+
 
 #container .last {
     margin: 0;
@@ -600,12 +627,6 @@ select {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-}
-
-.home{
-    position: absolute;
-    top: 50px;
-    left: 10px;
 }
 
 .home:hover{
